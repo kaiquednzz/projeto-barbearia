@@ -84,7 +84,7 @@ A identidade visual foi pensada para transmitir **sofisticação e confiança**,
 | 📗 Semestre | 1º Semestre |
 | 📝 Disciplina | Design Digital |
 | 📂 Tipo | Trabalho de Extensão |
-| 👨‍💻 Desenvolvedor | [Kaique Diniz](https://github.com/kaiquednzz), [Isaac Savioli](https://github.com/Isaac-Savioli) e [xxxxxxx](https://github.com/xxxxxxxx) |
+| 👨‍💻 Desenvolvedor | [Kaique Diniz](https://github.com/kaiquednzz), [Isaac Savioli](https://github.com/Isaac-Savioli) e [Anthony Calvaggi](https://github.com/AnthonyCalvaggi) |
 
 ---
 
