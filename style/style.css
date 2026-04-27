@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --color-black: #0D1420;
+    --color-navy: #1A2438;
+    --color-charcoal: #2C3547;
+    --color-gray: #8A909E;
+    --color-paragraf: #4d5158;
+    --color-gold: #C9A84C;
+    --color-offwhite: #F5F2ED;
+}
+
+
+
+.quem-somos {
+    background-color: var(--color-offwhite);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    gap: 100px;
+    height: 425px;
+}
+
+.quem-somos .textos {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    max-width: 550px;
+}
+
+.quem-somos .textos h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-gold);
+    margin-bottom: 20px;
+}
+
+.quem-somos .textos h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--color-black);
+    margin-bottom: 20px;
+}
+
+.quem-somos .textos p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-paragraf);
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.quem-somos .textos a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-offwhite);
+    width: fit-content;
+    background-color: var(--color-navy);
+    margin-bottom: 20px;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.quem-somos .textos a:hover {
+    background-color: var(--color-charcoal);
+    transform: translateY(-4px);
+}
+
+.quem-somos .barbeiros {
+    display: flex;
+    gap: 60px;
+}
+
+.quem-somos .barbeiros-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.quem-somos .barbeiros-grid img {
+    background-color: var(--color-charcoal);
+    width: 225px;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.quem-somos .barbeiros-grid h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+.quem-somos .barbeiros-grid p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-gold);
+}
