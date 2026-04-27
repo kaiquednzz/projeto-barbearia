@@ -110,3 +110,69 @@
     font-weight: 400;
     color: var(--color-gold);
 }
+
+.depoimentos {
+    background-color: var(--color-navy);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    height: 400px;
+}
+
+.depoimentos h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-gold);
+    margin-bottom: 10px;
+}
+
+.depoimentos h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    font-weight: 600;
+    color: var(--color-offwhite);
+    margin-bottom: 50px;
+}
+
+.depoimentos .depoimentos-container {
+    display: flex;
+    gap: 30px;
+}
+
+.depoimentos .depoimentos-container .depoimentos-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: start;
+    background-color: var(--color-charcoal);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--color-gray);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.depoimentos .depoimentos-container .depoimentos-grid .estrelas {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-gold);
+    margin-bottom: 10px;
+}
+
+.depoimentos .depoimentos-container .depoimentos-grid p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-offwhite);
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.depoimentos .depoimentos-container .depoimentos-grid hr {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
