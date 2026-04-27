@@ -23,6 +23,7 @@
     text-align: center;
     padding: 50px;
     gap: 100px;
+    height: 425px;
 }
 
 .quem-somos .textos {
@@ -35,7 +36,7 @@
 .quem-somos .textos h1 {
     font-family: 'Playfair Display', serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--color-gold);
     margin-bottom: 20px;
 }
@@ -43,7 +44,7 @@
 .quem-somos .textos h2 {
     font-family: 'Playfair Display', serif;
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--color-black);
     margin-bottom: 20px;
 }
@@ -53,7 +54,7 @@
     font-size: 18px;
     font-weight: 400;
     color: var(--color-paragraf);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: justify;
 }
 
@@ -89,9 +90,9 @@
 }
 
 .quem-somos .barbeiros-grid img {
-    background-color: var(--color-gray);
-    width: 180px;
-    height: 200px;
+    background-color: var(--color-charcoal);
+    width: 225px;
+    height: 250px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
