@@ -16,7 +16,7 @@
 
 <br/>
 
-[🔗 Ver o projeto ao vivo](#) · [🎨 Wireframe no Figma](#) · [📋 Reportar bug](../../issues)
+[🔗 Ver o projeto ao vivo](https://kaiquednzz.github.io/projeto-barbearia/) · [🎨 Wireframe no Figma](https://www.figma.com/proto/kui1IzfD3kUaxoSo2w0By5/Wireframe-%E2%80%94-Sal%C3%A3o-de-Cabeleireiro?node-id=1-2&t=Id30ULzt7gUYxGfu-1) · [📋 Reportar bug](../../issues)
 
 </div>
 
@@ -64,10 +64,13 @@ A identidade visual foi pensada para transmitir **sofisticação e confiança**,
 
 | Token | Hex | Uso |
 |---|---|---|
-| `--ink` | `#0d0d0d` | Fundo principal |
-| `--cream` | `#f5f0e8` | Textos principais |
-| `--gold` | `#c9a84c` | Destaques e CTAs |
-| `--muted` | `#7a756e` | Textos secundários |
+| `--color-black` | `#0D1420` | Fundo principal |
+| `--color-navy` | `#1A2438` | Fundo secundário |
+| `--color-charcoal` | `#2C3547` | Superfícies e cards |
+| `--color-gray` | `#8A909E` | Textos secundários |
+| `--color-paragraf` | `#4d5158` | Parágrafos |
+| `--color-gold` | `#C9A84C` | Destaques e CTAs |
+| `--color-offwhite` | `#F5F2ED` | Textos principais |
 
 **Tipografia:**
 - **Playfair Display** — títulos e destaques (elegância e sofisticação)
