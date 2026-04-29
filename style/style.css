@@ -13,7 +13,9 @@
     --color-offwhite: #F5F2ED;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 .quem-somos {
     background-color: var(--color-offwhite);
