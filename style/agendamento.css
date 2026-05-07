@@ -1,0 +1,447 @@
+/* ========================================
+   AGENDAMENTO — CSS  (fundo claro)
+   Salvar em: ./style/agendamento.css
+   ======================================== */
+
+.pagina-agendamento {
+    background-color: var(--color-offwhite);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ─────────────────────────────────────────
+   HEADER
+───────────────────────────────────────── */
+.header-agendamento {
+    background-color: var(--color-black);
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link { text-decoration: none; }
+
+.logo-texto {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-gold);
+    letter-spacing: 0.5px;
+}
+
+.voltar-link {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--color-gray);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s ease;
+}
+
+.voltar-link:hover { color: var(--color-offwhite); }
+
+/* ─────────────────────────────────────────
+   HERO BANNER (faixa escura sob o header)
+───────────────────────────────────────── */
+.agendamento-hero {
+    background-color: var(--color-navy);
+    padding: 52px 60px;
+    text-align: center;
+}
+
+.agendamento-hero .secao-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.agendamento-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--color-offwhite);
+    margin-bottom: 10px;
+    line-height: 1.15;
+}
+
+.agendamento-hero p {
+    font-size: 15px;
+    color: var(--color-gray);
+}
+
+/* ─────────────────────────────────────────
+   MAIN
+───────────────────────────────────────── */
+.agendamento-main {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 52px 40px 100px;
+}
+
+/* ─────────────────────────────────────────
+   LAYOUT: 2 colunas
+───────────────────────────────────────── */
+.agendamento-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 28px;
+    align-items: start;
+}
+
+/* ─────────────────────────────────────────
+   BLOCOS DO FORMULÁRIO
+───────────────────────────────────────── */
+.formulario-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-bloco {
+    background-color: #ffffff;
+    border: 1px solid rgba(44, 53, 71, 0.1);
+    border-radius: 16px;
+    padding: 32px 36px;
+    box-shadow: 0 2px 16px rgba(13, 20, 32, 0.06);
+}
+
+.form-bloco h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bloco-num {
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-navy);
+    color: var(--color-gold);
+    border-radius: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* ─────────────────────────────────────────
+   CARDS DE SERVIÇO
+───────────────────────────────────────── */
+.servicos-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.servico-opcao input[type="radio"] { display: none; }
+
+.opcao-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--color-offwhite);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 16px 20px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
+}
+
+.opcao-card:hover {
+    border-color: rgba(201, 168, 76, 0.4);
+    transform: translateX(4px);
+}
+
+.servico-opcao input:checked + .opcao-card {
+    border-color: var(--color-gold);
+    background-color: rgba(201, 168, 76, 0.06);
+}
+
+.opcao-preco {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-gold);
+    white-space: nowrap;
+    margin-left: 8px;
+}
+
+.opcao-preco.destaque { font-size: 12px; }
+
+/* ─────────────────────────────────────────
+   DATA & HORÁRIO
+───────────────────────────────────────── */
+.data-horario-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+/* ─────────────────────────────────────────
+   CAMPOS
+───────────────────────────────────────── */
+.campos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.campo-full { grid-column: 1 / -1; }
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-charcoal);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.obrigatorio { color: var(--color-gold); }
+
+.campo input,
+.campo select,
+.campo textarea {
+    background-color: var(--color-offwhite);
+    border: 1.5px solid rgba(44, 53, 71, 0.18);
+    border-radius: 10px;
+    color: var(--color-black);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 13px 16px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    resize: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.campo select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232C3547' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.campo input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: var(--color-gray);
+    font-weight: 300;
+}
+
+.campo select option { background-color: #fff; }
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--color-gold);
+    box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.12);
+}
+
+/* ─────────────────────────────────────────
+   DIVISOR entre blocos de campos
+───────────────────────────────────────── */
+.campo-divider {
+    grid-column: 1 / -1;
+    height: 1px;
+    background-color: rgba(44, 53, 71, 0.08);
+    margin: 4px 0;
+}
+
+/* ─────────────────────────────────────────
+   BOTÃO PRINCIPAL
+───────────────────────────────────────── */
+.btn-agendar {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-offwhite);
+    background-color: var(--color-navy);
+    border: none;
+    padding: 17px 36px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    letter-spacing: 0.3px;
+    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 4px 18px rgba(13, 20, 32, 0.18);
+}
+
+.btn-agendar:hover {
+    background-color: var(--color-charcoal);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(13, 20, 32, 0.22);
+}
+
+.btn-agendar i {
+    font-size: 13px;
+    transition: transform 0.2s ease;
+}
+
+.btn-agendar:hover i { transform: translateX(4px); }
+
+/* ─────────────────────────────────────────
+   ASIDE
+───────────────────────────────────────── */
+.agendamento-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: sticky;
+    top: 88px;
+}
+
+.aside-bloco {
+    background-color: #ffffff;
+    border: 1px solid rgba(44, 53, 71, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 2px 16px rgba(13, 20, 32, 0.05);
+}
+
+/* Bloco de horários: destaque com faixa dourada no topo */
+.aside-bloco.destaque-aside {
+    border-top: 3px solid var(--color-gold);
+}
+
+.aside-bloco h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.aside-bloco h4 i {
+    color: var(--color-gold);
+    font-size: 14px;
+}
+
+.aside-bloco p {
+    font-size: 13px;
+    color: var(--color-paragraf);
+    line-height: 1.65;
+}
+
+/* Lista de horários */
+.horarios-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.horarios-lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(44, 53, 71, 0.07);
+}
+
+.horarios-lista li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.horarios-lista li span { color: var(--color-paragraf); }
+
+.horarios-lista li strong {
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.horarios-lista li.fechado strong { color: #c0392b; }
+
+/* Botão WhatsApp */
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #25D366;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    width: 200px;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 3px 12px rgba(37, 211, 102, 0.25);
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-2px);
+}
+
+/* Aviso */
+.aside-aviso {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background-color: rgba(201, 168, 76, 0.08);
+    border: 1px solid rgba(201, 168, 76, 0.3);
+    border-radius: 12px;
+    padding: 16px 18px;
+}
+
+.aside-aviso i {
+    color: var(--color-gold);
+    font-size: 15px;
+    margin-top: 1px;
+    flex-shrink: 0;
+}
+
+.aside-aviso p {
+    font-size: 12px;
+    color: var(--color-paragraf);
+    line-height: 1.65;
+}

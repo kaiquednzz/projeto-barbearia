@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/agendamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Agendamento — A Barbearia</title>
+</head>
+
+<body class="pagina-agendamento">
+
+    <!-- Header -->
+    <header class="header-agendamento">
+        <div class="header-inner">
+            <a href="/index.html" class="logo-link">
+                <span class="logo-texto">A Barbearia</span>
+            </a>
+            <a href="/index.html" class="voltar-link">
+                <i class="fa-solid fa-arrow-left"></i> Voltar ao site
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero banner -->
+    <div class="agendamento-hero">
+        <span class="secao-label">Agendamento</span>
+        <h1>Reserve seu Horário</h1>
+        <p>Preencha o formulário abaixo e entraremos em contato para confirmar.</p>
+    </div>
+
+    <!-- Main -->
+    <main class="agendamento-main">
+        <div class="agendamento-layout">
+
+            <!-- ── Coluna esquerda: Formulário ── -->
+            <div class="formulario-wrapper">
+
+                <!-- Bloco 1: Serviço -->
+                <div class="form-bloco">
+                    <h3><span class="bloco-num">1</span> Escolha o Serviço</h3>
+                    <div class="servicos-opcoes">
+
+                        <label class="servico-opcao">
+                            <input type="radio" name="servico" value="corte">
+                            <div class="opcao-card">
+                                <div class="servico-icone">
+                                    <i class="fa-solid fa-scissors"></i>
+                                </div>
+                                <div class="opcao-info">
+                                    <strong>Corte Masculino</strong>
+                                    <span>Degradê, navalhado, clássico e moderno</span>
+                                    <small><i class="fa-regular fa-clock"></i> 45 min</small>
+                                </div>
+                                <span class="opcao-preco">R$ 45</span>
+                            </div>
+                        </label>
+
+                        <label class="servico-opcao">
+                            <input type="radio" name="servico" value="barba">
+                            <div class="opcao-card">
+                                <div class="servico-icone">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <div class="opcao-info">
+                                    <strong>Barba</strong>
+                                    <span>Modelagem, hidratação e acabamento perfeito</span>
+                                    <small><i class="fa-regular fa-clock"></i> 30 min</small>
+                                </div>
+                                <span class="opcao-preco">R$ 35</span>
+                            </div>
+                        </label>
+
+                        <label class="servico-opcao">
+                            <input type="radio" name="servico" value="coloracao">
+                            <div class="opcao-card">
+                                <div class="servico-icone">
+                                    <i class="fa-solid fa-brush"></i>
+                                </div>
+                                <div class="opcao-info">
+                                    <strong>Coloração</strong>
+                                    <span>Tons naturais, luzes e técnicas modernas</span>
+                                    <small><i class="fa-regular fa-clock"></i> 90 min</small>
+                                </div>
+                                <span class="opcao-preco destaque">A partir de R$ 80</span>
+                            </div>
+                        </label>
+
+                        <label class="servico-opcao">
+                            <input type="radio" name="servico" value="tratamento">
+                            <div class="opcao-card">
+                                <div class="servico-icone">
+                                    <i class="fa-solid fa-droplet"></i>
+                                </div>
+                                <div class="opcao-info">
+                                    <strong>Tratamento Capilar</strong>
+                                    <span>Hidratação profunda e reconstrução</span>
+                                    <small><i class="fa-regular fa-clock"></i> 60 min</small>
+                                </div>
+                                <span class="opcao-preco">R$ 60</span>
+                            </div>
+                        </label>
+
+                    </div>
+                </div>
+
+                <!-- Bloco 2: Data & Horário -->
+                <div class="form-bloco">
+                    <h3><span class="bloco-num">2</span> Data & Horário</h3>
+                    <div class="data-horario-row">
+                        <div class="campo">
+                            <label for="data">Data preferida</label>
+                            <input type="date" id="data" name="data">
+                        </div>
+                        <div class="campo">
+                            <label for="horario">Horário preferido</label>
+                            <select id="horario" name="horario">
+                                <option value="" disabled selected>Selecione</option>
+                                <option>09:00</option>
+                                <option>09:30</option>
+                                <option>10:00</option>
+                                <option>10:30</option>
+                                <option>11:00</option>
+                                <option>11:30</option>
+                                <option>14:00</option>
+                                <option>14:30</option>
+                                <option>15:00</option>
+                                <option>15:30</option>
+                                <option>16:00</option>
+                                <option>16:30</option>
+                                <option>17:00</option>
+                                <option>17:30</option>
+                                <option>18:00</option>
+                                <option>18:30</option>
+                                <option>19:00</option>
+                                <option>19:30</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloco 3: Dados pessoais -->
+                <div class="form-bloco">
+                    <h3><span class="bloco-num">3</span> Seus Dados</h3>
+                    <div class="campos-grid">
+
+                        <div class="campo">
+                            <label for="nome">Nome completo <span class="obrigatorio">*</span></label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                        </div>
+
+                        <div class="campo">
+                            <label for="telefone">WhatsApp <span class="obrigatorio">*</span></label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(11) 9 0000-0000">
+                        </div>
+
+                        <div class="campo campo-full">
+                            <label for="email">E-mail <span class="obrigatorio">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com">
+                        </div>
+
+                        <div class="campo campo-full">
+                            <label for="observacoes">Observações <span
+                                    style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--color-gray)">(opcional)</span></label>
+                            <textarea id="observacoes" name="observacoes" rows="3"
+                                placeholder="Alguma preferência ou informação adicional?"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="btn-agendar" type="submit">
+                    Solicitar Agendamento <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+            <!-- ── Coluna direita: Aside ── -->
+            <aside class="agendamento-aside">
+
+                <div class="aside-bloco destaque-aside">
+                    <h4><i class="fa-regular fa-clock"></i> Funcionamento</h4>
+                    <ul class="horarios-lista">
+                        <li><span>Segunda – Sexta</span><strong>9h – 20h</strong></li>
+                        <li><span>Sábado</span><strong>9h – 18h</strong></li>
+                        <li class="fechado"><span>Domingo</span><strong>Fechado</strong></li>
+                    </ul>
+                </div>
+
+                <div class="aside-bloco">
+                    <h4><i class="fa-solid fa-location-dot"></i> Endereço</h4>
+                    <p>Rua dos Barbeiros, 42<br>São Paulo – SP</p>
+                </div>
+
+                <div class="aside-bloco">
+                    <h4><i class="fa-brands fa-whatsapp"></i> Prefere o WhatsApp?</h4>
+                    <p>Fale diretamente com a gente para agendar seu horário.</p>
+                    <a href="https://wa.me/+5511917957905" class="btn-whatsapp" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+                    </a>
+                </div>
+
+                <div class="aside-aviso">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Após o envio, entraremos em contato em até <strong>1 hora útil</strong> para confirmar seu
+                        horário.</p>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
