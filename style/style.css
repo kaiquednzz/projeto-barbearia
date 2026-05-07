@@ -465,7 +465,6 @@ SEÇÃO: NOSSOS SERVIÇOS
 /* ========================================
    RESPONSIVO
    ======================================== */
-
 @media (max-width: 900px) {
 
     .galeria {
@@ -475,9 +474,7 @@ SEÇÃO: NOSSOS SERVIÇOS
     .galeria-grid {
         grid-template-columns: 1fr 1fr;
 
-        grid-template-rows:
-            200px
-            200px;
+        grid-template-rows: repeat(4, 200px);
 
         grid-template-areas:
             "foto1 foto1"
