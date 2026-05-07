@@ -174,7 +174,6 @@ html {
     color: var(--color-offwhite);
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-
 }
 
 /* ========================================
@@ -358,7 +357,7 @@ SEÇÃO: NOSSOS SERVIÇOS
     grid-template-columns: 1.32fr 1fr 1fr 1.32fr;
 
     grid-template-rows: 200px 200px;
-
+  
     gap: 12px;
 
     grid-template-areas:
@@ -508,6 +507,7 @@ SEÇÃO: NOSSOS SERVIÇOS
             "foto6";
     }
 }
+
 
 .quem-somos {
     background-color: var(--color-offwhite);
