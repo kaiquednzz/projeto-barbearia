@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=UnifrakturMaguntia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 * {
     margin: 0px;
@@ -23,15 +24,20 @@ html {
 /* --- NAV BAR --- */
 .navbar {
     display: flex;
+    margin: auto;
+    height: 70px;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     background-color: var(--color-offwhite);
 }
 
+.navbar .logo {
+    width: 100px;
+}
+
 .navbar .logo img {
-    max-height: 60px;
-    width: auto;
+    width: 100%;
 }
 
 .navbar nav .navlink {
@@ -62,7 +68,6 @@ html {
     font-weight: 500;
     font-size: 16px;
     transition: all 0.3s ease;
-    display: inline-block;
 }
 
 .btn:hover {
@@ -195,11 +200,11 @@ SEÇÃO: NOSSOS SERVIÇOS
 }
 
 .secao-label {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono';
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
-    color: var(--color-gold);
+    color: #9f8028;
     text-transform: uppercase;
     margin-bottom: 12px;
 }
@@ -261,7 +266,7 @@ SEÇÃO: NOSSOS SERVIÇOS
 }
 
 .servico-card h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins';
     font-size: 18px;
     font-weight: 600;
     color: var(--color-black);
@@ -289,7 +294,7 @@ SEÇÃO: NOSSOS SERVIÇOS
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: var(--color-gold);
+    color: #9f8028;
 }
 
 .destaque-preco {
@@ -310,15 +315,10 @@ SEÇÃO: NOSSOS SERVIÇOS
 
 .servico-link:hover {
     color: var(--color-offwhite);
-    letter-spacing: 0.5px;
-    transform: scale(1.1);
+    transform: translateY(-4px);
     background-color: var(--color-navy);
-
 }
 
-/* ========================================
-   SEÇÃO: GALERIA DE ESTILOS
-   ======================================== */
 
 .galeria {
     background-color: var(--color-black);
@@ -459,51 +459,12 @@ SEÇÃO: NOSSOS SERVIÇOS
 .btn-galeria:hover {
     background-color: var(--color-offwhite);
     color: var(--color-black);
-    transform: translateY(-3px);
+    transform: translateY(-4px);
 }
 
 /* ========================================
    RESPONSIVO
    ======================================== */
-@media (max-width: 900px) {
-
-    .galeria {
-        padding: 72px 24px;
-    }
-
-    .galeria-grid {
-        grid-template-columns: 1fr 1fr;
-
-        grid-template-rows: repeat(4, 200px);
-
-        grid-template-areas:
-            "foto1 foto1"
-            "foto2 foto4"
-            "foto3 foto5"
-            "foto6 foto6";
-    }
-}
-
-@media (max-width: 520px) {
-
-    .galeria-header h2 {
-        font-size: 34px;
-    }
-
-    .galeria-grid {
-        grid-template-columns: 1fr;
-
-        grid-template-rows: repeat(6, 200px);
-
-        grid-template-areas:
-            "foto1"
-            "foto2"
-            "foto3"
-            "foto4"
-            "foto5"
-            "foto6";
-    }
-}
 
 
 .quem-somos {
@@ -525,17 +486,17 @@ SEÇÃO: NOSSOS SERVIÇOS
 }
 
 .quem-somos .textos h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Mono', serif;
     font-size: 16px;
     font-weight: 500;
-    color: var(--color-gold);
+    color: #9f8028;
     margin-bottom: 20px;
 }
 
 .quem-somos .textos h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    font-weight: 500;
+    font-size: 42px;
+    font-weight: 700;
     color: var(--color-black);
     margin-bottom: 20px;
 }
@@ -614,7 +575,7 @@ SEÇÃO: NOSSOS SERVIÇOS
 }
 
 .depoimentos h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Mono';
     font-size: 14px;
     font-weight: 500;
     color: var(--color-gold);
@@ -623,8 +584,8 @@ SEÇÃO: NOSSOS SERVIÇOS
 
 .depoimentos h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 46px;
-    font-weight: 600;
+    font-size: 42px;
+    font-weight: 700;
     color: var(--color-offwhite);
     margin-bottom: 50px;
 }
@@ -638,6 +599,7 @@ SEÇÃO: NOSSOS SERVIÇOS
     display: flex;
     flex-direction: column;
     text-align: start;
+    max-width: 425px;
     justify-content: start;
     background-color: var(--color-charcoal);
     padding: 30px;
