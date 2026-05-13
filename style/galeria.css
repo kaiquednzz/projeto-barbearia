@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* ========================================
+   GALERIA — CSS  (fundo claro)
+   Salvar em: ./style/galeria.css
+   ======================================== */
+
+.pagina-galeria {
+    background-color: var(--color-offwhite);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ─────────────────────────────────────────
+   HEADER
+───────────────────────────────────────── */
+.header-galeria {
+    background-color: var(--color-black);
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link { text-decoration: none; }
+
+.logo-texto {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-gold);
+    letter-spacing: 0.5px;
+}
+
+.voltar-link {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--color-gray);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s ease;
+}
+
+.voltar-link:hover { color: var(--color-offwhite); }
+
+/* ─────────────────────────────────────────
+   HERO BANNER (faixa escura sob o header)
+───────────────────────────────────────── */
+.galeria-hero {
+    background-color: var(--color-navy);
+    padding: 52px 60px;
+    text-align: center;
+}
+
+.galeria-hero .secao-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.galeria-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--color-offwhite);
+    margin-bottom: 10px;
+    line-height: 1.15;
+}
+
+.galeria-hero p {
+    font-size: 15px;
+    color: var(--color-gray);
+}
+
+/* ─────────────────────────────────────────
+   GRID DE IMAGENS
+───────────────────────────────────────── */
+main{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100vw;
+    background-color: var(--color-navy);
+}
+.galeria-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    padding: 30px;
+    align-items: center;
+}
+.foto-grande{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--color-gold);
+    box-shadow: 0px 0px 12px #c9a84c9b;
+    object-fit: cover;
+}
+.foto-pequena {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--color-gold);
+    box-shadow: 0px 0px 12px #c9a84c9b;
+    object-fit: cover;
+}
