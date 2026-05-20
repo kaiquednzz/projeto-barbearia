@@ -1,6 +1,6 @@
 /* ========================================
-   AGENDAMENTO — CSS  (fundo claro)
-   Salvar em: ./style/agendamento.css
+    AGENDAMENTO — CSS  (fundo claro)
+    Salvar em: ./style/agendamento.css
    ======================================== */
 
 .pagina-agendamento {
@@ -10,7 +10,7 @@
 }
 
 /* ─────────────────────────────────────────
-   HEADER
+    HEADER
 ───────────────────────────────────────── */
 .header-agendamento {
     background-color: var(--color-black);
@@ -56,7 +56,7 @@
 .voltar-link:hover { color: var(--color-offwhite); }
 
 /* ─────────────────────────────────────────
-   HERO BANNER (faixa escura sob o header)
+    HERO BANNER (faixa escura sob o header)
 ───────────────────────────────────────── */
 .agendamento-hero {
     background-color: var(--color-navy);
@@ -89,7 +89,7 @@
 }
 
 /* ─────────────────────────────────────────
-   MAIN
+    MAIN
 ───────────────────────────────────────── */
 .agendamento-main {
     max-width: 1140px;
@@ -98,7 +98,7 @@
 }
 
 /* ─────────────────────────────────────────
-   LAYOUT: 2 colunas
+    LAYOUT: 2 colunas
 ───────────────────────────────────────── */
 .agendamento-layout {
     display: grid;
@@ -108,7 +108,7 @@
 }
 
 /* ─────────────────────────────────────────
-   BLOCOS DO FORMULÁRIO
+    BLOCOS DO FORMULÁRIO
 ───────────────────────────────────────── */
 .formulario-wrapper {
     display: flex;
@@ -151,7 +151,7 @@
 }
 
 /* ─────────────────────────────────────────
-   CARDS DE SERVIÇO
+    CARDS DE SERVIÇO
 ───────────────────────────────────────── */
 .servicos-opcoes {
     display: flex;
@@ -194,7 +194,7 @@
 .opcao-preco.destaque { font-size: 12px; }
 
 /* ─────────────────────────────────────────
-   DATA & HORÁRIO
+    DATA & HORÁRIO
 ───────────────────────────────────────── */
 .data-horario-row {
     display: grid;
@@ -203,7 +203,7 @@
 }
 
 /* ─────────────────────────────────────────
-   CAMPOS
+    CAMPOS
 ───────────────────────────────────────── */
 .campos-grid {
     display: grid;
@@ -275,7 +275,7 @@
 }
 
 /* ─────────────────────────────────────────
-   DIVISOR entre blocos de campos
+    DIVISOR entre blocos de campos
 ───────────────────────────────────────── */
 .campo-divider {
     grid-column: 1 / -1;
@@ -285,7 +285,7 @@
 }
 
 /* ─────────────────────────────────────────
-   BOTÃO PRINCIPAL
+    BOTÃO PRINCIPAL
 ───────────────────────────────────────── */
 .btn-agendar {
     font-family: 'Poppins', sans-serif;
@@ -321,7 +321,7 @@
 .btn-agendar:hover i { transform: translateX(4px); }
 
 /* ─────────────────────────────────────────
-   ASIDE
+    ASIDE
 ───────────────────────────────────────── */
 .agendamento-aside {
     display: flex;
