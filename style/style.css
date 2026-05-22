@@ -36,7 +36,7 @@ html {
     width: 100px;
 }
 
-.navbar .logo img {
+.navbar .logo a img {
     width: 100%;
 }
 
@@ -55,8 +55,16 @@ html {
     transition: all 0.2s ease;
 }
 
+.navbar nav .navlink li {
+    transition: all 0.2s ease;
+}
+
+.navbar nav .navlink li:hover {
+    transform: translateY(-3px);
+}
+
 .navbar nav .navlink a:hover {
-    color: var(--color-gold);
+    color: #a78a3d;
 }
 
 /* --- BOTÕES (Nav e Hero) --- */
@@ -66,7 +74,7 @@ html {
     border-radius: 10px;
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     transition: all 0.3s ease;
 }
 
@@ -188,7 +196,7 @@ SEÇÃO: NOSSOS SERVIÇOS
 .servicos {
     background-color: var(--color-offwhite);
     padding: 80px 80px 170px;
-    
+
 }
 
 .servicos-header {
@@ -239,9 +247,9 @@ SEÇÃO: NOSSOS SERVIÇOS
     display: flex;
     flex-direction: column;
     gap: 10px;
-    box-shadow: 0 2px 12px rgba(13, 20, 32, 0.07);
+    box-shadow: 0 2px 8px rgba(13, 20, 32, 0.07);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
-    border: 1px solid rgba(138, 144, 158, 0.15);
+    border: 1px solid var(--color-navy);
 }
 
 .servico-card:hover {
@@ -250,10 +258,10 @@ SEÇÃO: NOSSOS SERVIÇOS
 }
 
 .servico-icone {
-    font-size: 30px;
+    font-size: 22px;
     background-color: var(--color-navy);
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -261,7 +269,7 @@ SEÇÃO: NOSSOS SERVIÇOS
     margin-bottom: 6px;
 }
 
-.servico-icone i{
+.servico-icone i {
     color: var(--color-gold);
 }
 
@@ -330,7 +338,6 @@ SEÇÃO: NOSSOS SERVIÇOS
     flex-direction: column;
     align-items: center;
     text-align: center;
-
     margin-bottom: 42px;
 }
 
@@ -339,34 +346,27 @@ SEÇÃO: NOSSOS SERVIÇOS
     font-size: 42px;
     font-weight: 700;
     line-height: 1.1;
-
     color: var(--color-offwhite);
 }
 
 /* ========================================
-   GRID DA GALERIA
+    GRID DA GALERIA
    ======================================== */
 
 .galeria-grid {
     max-width: 1200px;
-
     margin: 0 auto;
-
     display: grid;
-
     grid-template-columns: 1.32fr 1fr 1fr 1.32fr;
-
     grid-template-rows: 200px 200px;
-  
     gap: 12px;
-
     grid-template-areas:
         "foto1 foto2 foto4 foto6"
         "foto1 foto3 foto5 foto6";
 }
 
 /* ========================================
-   POSICIONAMENTO DAS FOTOS
+    POSICIONAMENTO DAS FOTOS
    ======================================== */
 
 .foto-1 {
@@ -394,32 +394,27 @@ SEÇÃO: NOSSOS SERVIÇOS
 }
 
 /* ========================================
-   ITENS
+    ITENS
    ======================================== */
 
 .galeria-item {
     position: relative;
-
     background-color: var(--color-charcoal);
-
     border-radius: 8px;
-
     overflow: hidden;
-
     cursor: pointer;
+    border: 1px solid var(--color-gray);
 }
 
 .galeria-item img {
     width: 100%;
     height: 100%;
-
     display: block;
-
     object-fit: cover;
 }
 
 /* ========================================
-   HOVER OVERLAY
+    HOVER OVERLAY
    ======================================== */
 
 .galeria-item::after {
@@ -463,7 +458,7 @@ SEÇÃO: NOSSOS SERVIÇOS
 }
 
 /* ========================================
-   RESPONSIVO
+    RESPONSIVO
    ======================================== */
 
 
@@ -482,12 +477,12 @@ SEÇÃO: NOSSOS SERVIÇOS
     display: flex;
     flex-direction: column;
     text-align: start;
-    max-width: 550px;
+    max-width: 500px;
 }
 
 .quem-somos .textos h1 {
     font-family: 'Roboto Mono', serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     color: #9f8028;
     margin-bottom: 20px;
@@ -547,10 +542,11 @@ SEÇÃO: NOSSOS SERVIÇOS
     height: 250px;
     border-radius: 10px;
     margin-bottom: 10px;
+    border: 1px solid var(--color-gray);
 }
 
 .quem-somos .barbeiros-grid h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins';
     font-size: 18px;
     font-weight: 400;
     color: var(--color-black);
@@ -576,7 +572,7 @@ SEÇÃO: NOSSOS SERVIÇOS
 
 .depoimentos h1 {
     font-family: 'Roboto Mono';
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     color: var(--color-gold);
     margin-bottom: 10px;
