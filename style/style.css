@@ -777,3 +777,112 @@ footer .copyright {
 footer .copyright hr {
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1032px) {
+    .quem-somos {
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quem-somos .textos {
+        max-width: 700px;
+    }
+
+    .quem-somos .barbeiros {
+        max-width: 90vw;
+        margin: auto;
+    }
+
+    .depoimentos {
+        height: auto;
+    }
+
+    .depoimentos .depoimentos-container {
+        flex-direction: column;
+    }
+    
+    .depoimentos .depoimentos-container .depoimentos-grid {
+        width: 700px;
+        max-width: 75vw;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    footer .footer-container {
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+    }
+
+    footer .footer-container .logo {
+        display: flex;
+        justify-content: start;
+    }
+
+    footer .footer-container nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-container .social {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .quem-somos .barbeiros {
+        flex-direction: column;
+    }   
+}
+
+@media screen and (max-width: 666px) {
+    footer .footer-container nav {
+        flex-direction: column;
+        max-width: 90vw;
+        width: 100%;
+        gap: 20px;
+        justify-content: start;
+        align-items: start;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .quem-somos .textos h2 {
+        font-size: 32px;
+    }
+
+    .quem-somos .textos p {
+        font-size: 16px;
+    }
+
+    .depoimentos h2 {
+        font-size: 32px;
+    }
+
+    .cta .textos h1 {
+        font-size: 32px;
+    }
+
+    .cta .botoes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta .botoes a {
+        margin: 10px;
+    }
+
+    footer .footer-container {
+        font-size: 16px;
+    }
+
+    footer .copyright {
+        font-size: 12px;
+    }
+}
