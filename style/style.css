@@ -318,7 +318,205 @@ SEÇÃO: NOSSOS SERVIÇOS
     transform: translateY(-4px);
     background-color: var(--color-navy);
 }
+/* ── Desktop padrão: até 1280px ── */
+@media screen and (max-width: 1280px) {
+  .servicos {
+    padding: 80px 60px 140px;
+  }
 
+  .servicos-grid {
+    max-width: 100%;
+    gap: 20px;
+  }
+}
+
+/* ── Laptop / Tablet landscape: até 1024px ── */
+@media screen and (max-width: 1024px) {
+  .servicos {
+    padding: 72px 48px 120px;
+  }
+
+  .servicos-header h2 {
+    font-size: 36px;
+  }
+
+  .servicos-header p {
+    font-size: 15px;
+  }
+
+  /* 2 colunas: mantém legibilidade sem comprimir demais */
+  .servicos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* ── Tablet portrait: até 768px ── */
+@media screen and (max-width: 768px) {
+  .servicos {
+    padding: 64px 32px 100px;
+  }
+
+  .servicos-header {
+    margin-bottom: 40px;
+  }
+
+  .servicos-header h2 {
+    font-size: 32px;
+  }
+
+  .servicos-header p {
+    font-size: 14px;
+    max-width: 480px;
+  }
+
+  .servicos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .servico-card {
+    padding: 24px 20px;
+  }
+
+  .servico-icone {
+    width: 46px;
+    height: 46px;
+    font-size: 22px;
+  }
+
+  .servico-card h3 {
+    font-size: 16px;
+  }
+
+  .servico-card p {
+    font-size: 12px;
+  }
+
+  .servico-preco {
+    font-size: 14px;
+  }
+
+  .destaque-preco {
+    font-size: 12px;
+  }
+
+  .servico-link {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+}
+
+/* ── Mobile large: até 600px ── */
+@media screen and (max-width: 600px) {
+  .servicos {
+    padding: 56px 24px 88px;
+  }
+
+  /* 1 coluna com largura controlada para não parecer "esticado" */
+  .servicos-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+    gap: 14px;
+  }
+
+  .servicos-header h2 {
+    font-size: 28px;
+  }
+}
+
+/* ── Mobile padrão: até 480px ── */
+@media screen and (max-width: 480px) {
+  .servicos {
+    padding: 48px 20px 80px;
+  }
+
+  .secao-label {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .servicos-header h2 {
+    font-size: 26px;
+  }
+
+  .servicos-header p {
+    font-size: 13px;
+  }
+
+  .servicos-grid {
+    max-width: 100%;
+    gap: 12px;
+  }
+
+  .servico-card {
+    padding: 22px 18px;
+    gap: 8px;
+  }
+
+  .servico-icone {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    border-radius: 8px;
+  }
+
+  .servico-card h3 {
+    font-size: 15px;
+  }
+
+  .servico-card p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .servico-rodape {
+    margin-top: 10px;
+    padding-top: 12px;
+  }
+
+  .servico-preco {
+    font-size: 14px;
+  }
+
+  .destaque-preco {
+    font-size: 11px;
+  }
+
+  .servico-link {
+    font-size: 12px;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+}
+
+/* ── Mobile pequeno: até 360px ── */
+@media screen and (max-width: 360px) {
+  .servicos {
+    padding: 40px 16px 72px;
+  }
+
+  .servicos-header h2 {
+    font-size: 24px;
+  }
+
+  .servico-card {
+    padding: 20px 16px;
+  }
+
+  /* Rodapé empilhado evita overflow em telas muito estreitas */
+  .servico-rodape {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .servico-link {
+    align-self: stretch;
+    text-align: center;
+  }
+}
 
 .galeria {
     background-color: var(--color-black);
@@ -460,6 +658,223 @@ SEÇÃO: NOSSOS SERVIÇOS
     background-color: var(--color-offwhite);
     color: var(--color-black);
     transform: translateY(-4px);
+}
+
+/* ── Desktop padrão: até 1280px ── */
+@media screen and (max-width: 1280px) {
+  .galeria {
+    padding: 80px 60px 72px;
+  }
+
+  .galeria-grid {
+    max-width: 100%;
+  }
+}
+
+/* ── Laptop / Tablet landscape: até 1024px ──
+   Layout: 3 colunas, foto1 e foto6 ainda
+   ocupam 2 linhas nas extremidades
+   ──────────────────────────────────────── */
+@media screen and (max-width: 1024px) {
+  .galeria {
+    padding: 72px 48px 64px;
+  }
+
+  .galeria-header h2 {
+    font-size: 36px;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1.2fr 1fr 1.2fr;
+    grid-template-rows: 180px 180px;
+    grid-template-areas:
+      "foto1 foto2 foto6"
+      "foto1 foto3 foto6";
+  }
+
+  /* foto4 e foto5 ficam fora do fluxo do grid-area:
+     precisamos escondê-las ou reposicioná-las.
+     Aqui optamos por colocá-las numa terceira linha */
+  .galeria-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 180px 180px 180px;
+    grid-template-areas:
+      "foto1 foto2 foto6"
+      "foto1 foto3 foto6"
+      "foto4 foto4 foto5";
+  }
+
+  .foto-4 {
+    grid-area: foto4;
+  }
+
+  .foto-5 {
+    grid-area: foto5;
+  }
+}
+
+/* ── Tablet portrait: até 768px ──
+   Layout: 2 colunas simétricas,
+   sem elementos que ocupam 2 linhas —
+   complexidade reduzida para legibilidade
+   ──────────────────────────────────────── */
+@media screen and (max-width: 768px) {
+  .galeria {
+    padding: 64px 32px 56px;
+  }
+
+  .galeria-header {
+    margin-bottom: 32px;
+  }
+
+  .galeria-header h2 {
+    font-size: 32px;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+
+    /* Redefine todas as áreas: layout 2x3 limpo */
+    grid-template-areas:
+      "foto1 foto2"
+      "foto3 foto4"
+      "foto5 foto6";
+  }
+
+  /* Reseta todos os grid-area para o novo mapa */
+  .foto-1 { grid-area: foto1; }
+  .foto-2 { grid-area: foto2; }
+  .foto-3 { grid-area: foto3; }
+  .foto-4 { grid-area: foto4; }
+  .foto-5 { grid-area: foto5; }
+  .foto-6 { grid-area: foto6; }
+
+  .btn-galeria {
+    font-size: 14px;
+    padding: 12px 28px;
+  }
+}
+
+/* ── Mobile large: até 600px ──
+   Layout: 2 colunas com altura menor,
+   uma foto com destaque ocupa linha inteira
+   ──────────────────────────────────────── */
+@media screen and (max-width: 600px) {
+  .galeria {
+    padding: 56px 24px 48px;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 160px 160px;
+    gap: 8px;
+
+    /* foto1 se destaca ocupando a linha inteira */
+    grid-template-areas:
+      "foto1 foto1"
+      "foto2 foto3"
+      "foto4 foto5";
+  }
+
+  .foto-1 { grid-area: foto1; }
+  .foto-2 { grid-area: foto2; }
+  .foto-3 { grid-area: foto3; }
+  .foto-4 { grid-area: foto4; }
+  .foto-5 { grid-area: foto5; }
+
+  /* foto6 oculta: 5 fotos preenchem bem em mobile
+     sem deixar célula vazia no grid */
+  .foto-6 {
+    display: none;
+  }
+
+  .galeria-botao {
+    margin-top: 24px;
+  }
+}
+
+/* ── Mobile padrão: até 480px ── */
+@media screen and (max-width: 480px) {
+  .galeria {
+    padding: 48px 20px 44px;
+  }
+
+  .secao-label {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .galeria-header h2 {
+    font-size: 26px;
+  }
+
+  .galeria-header {
+    margin-bottom: 24px;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 150px 150px;
+    gap: 6px;
+  }
+
+  .galeria-item {
+    border-radius: 6px;
+  }
+
+  .btn-galeria {
+    font-size: 13px;
+    padding: 11px 24px;
+  }
+}
+
+/* ── Mobile pequeno: até 360px ──
+   Layout: 1 coluna — elimina toda
+   complexidade de grid, empilha tudo
+   ──────────────────────────────────────── */
+@media screen and (max-width: 360px) {
+  .galeria {
+    padding: 40px 16px 40px;
+  }
+
+  .galeria-header h2 {
+    font-size: 24px;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 200px);
+    gap: 8px;
+
+    grid-template-areas:
+      "foto1"
+      "foto2"
+      "foto3"
+      "foto4"
+      "foto5";
+  }
+
+  .foto-1 { grid-area: foto1; }
+  .foto-2 { grid-area: foto2; }
+  .foto-3 { grid-area: foto3; }
+  .foto-4 { grid-area: foto4; }
+  .foto-5 { grid-area: foto5; }
+
+  .galeria-item {
+    border-radius: 6px;
+  }
+
+  .galeria-botao {
+    margin-top: 20px;
+  }
+
+  .btn-galeria {
+    width: 100%;
+    text-align: center;
+    padding: 13px 20px;
+  }
 }
 
 /* ========================================

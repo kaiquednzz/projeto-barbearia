@@ -8,17 +8,17 @@ body{
 }
 
 /* ========================================
-   GALERIA — CSS  (fundo claro)
-   Salvar em: ./style/galeria.css
+   GALERIA — CSS
    ======================================== */
 
 .pagina-galeria {
     background-color: var(--color-offwhite);
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
+    
 }
 
-/* ─────────────────────────────────────────
+/* ───────────────────────────────────────── 
    HEADER
 ───────────────────────────────────────── */
 .header-galeria {
