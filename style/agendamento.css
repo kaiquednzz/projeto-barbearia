@@ -445,3 +445,344 @@
     color: var(--color-paragraf);
     line-height: 1.65;
 }
+/* ── Desktop padrão: até 1200px ── */
+@media screen and (max-width: 1200px) {
+  .agendamento-main {
+    padding: 48px 32px 80px;
+  }
+
+  .agendamento-layout {
+    grid-template-columns: 1fr 280px;
+    gap: 24px;
+  }
+}
+
+/* ── Laptop / Tablet landscape: até 1024px ── */
+@media screen and (max-width: 1024px) {
+  .header-agendamento {
+    padding: 0 40px;
+  }
+
+  .agendamento-hero {
+    padding: 44px 40px;
+  }
+
+  .agendamento-hero h1 {
+    font-size: 38px;
+  }
+
+  .agendamento-main {
+    padding: 40px 28px 72px;
+  }
+
+  .agendamento-layout {
+    grid-template-columns: 1fr 260px;
+    gap: 20px;
+  }
+
+  .btn-whatsapp{
+    width: fit-content;
+  }
+
+  .form-bloco {
+    padding: 28px 28px;
+  }
+}
+
+/* ── Tablet portrait: até 768px ──
+   Ponto crítico: aside desce abaixo do formulário.
+   Remove sticky para não travar o scroll.
+   ──────────────────────────────────────── */
+@media screen and (max-width: 768px) {
+  .header-agendamento {
+    height: 60px;
+    padding: 0 28px;
+  }
+
+  .logo-texto {
+    font-size: 20px;
+  }
+
+  .voltar-link {
+    font-size: 12px;
+  }
+
+  .agendamento-hero {
+    padding: 40px 28px;
+  }
+
+  .agendamento-hero h1 {
+    font-size: 34px;
+  }
+
+  .agendamento-hero p {
+    font-size: 14px;
+  }
+
+  .agendamento-main {
+    padding: 32px 24px 64px;
+  }
+
+  /* Colapsa para 1 coluna: aside vai para baixo */
+  .agendamento-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Aside: deixa de ser sticky */
+  .agendamento-aside {
+    position: static;
+    top: auto;
+
+    /* Em tablet, aside vira grid 2x2 para compactar */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  /* Aviso ocupa linha inteira no grid do aside */
+  .aside-aviso {
+    grid-column: 1 / -1;
+  }
+  
+
+  .form-bloco {
+    padding: 28px 24px;
+  }
+
+  .form-bloco h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  /* Cards de serviço: preço fica à direita sem margin extra */
+  .opcao-card {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .opcao-preco {
+    font-size: 14px;
+    margin-left: auto;
+  }
+
+  .opcao-preco.destaque {
+    font-size: 11px;
+  }
+}
+
+/* ── Mobile large: até 600px ── */
+@media screen and (max-width: 600px) {
+  .header-agendamento {
+    padding: 0 20px;
+  }
+
+  .agendamento-hero {
+    padding: 36px 20px;
+  }
+
+  .agendamento-hero h1 {
+    font-size: 30px;
+  }
+
+  .agendamento-main {
+    padding: 24px 16px 56px;
+  }
+
+  /* Aside vira 1 coluna novamente em mobile */
+  .agendamento-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Campos de data e horário empilham */
+  .data-horario-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  /* Campos pessoais: cada um ocupa linha inteira */
+  .campos-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  /* campo-full já é 1/-1, se grid é 1 col não muda visualmente */
+  .campo-full {
+    grid-column: auto;
+  }
+}
+
+/* ── Mobile padrão: até 480px ── */
+@media screen and (max-width: 480px) {
+
+  .agendamento-hero .secao-label {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    overflow: hidden;
+  }
+
+  .agendamento-hero h1 {
+    font-size: 26px;
+  }
+
+  .agendamento-hero p {
+    font-size: 13px;
+  }
+
+  .agendamento-main {
+    padding: 20px 12px 48px;
+  }
+
+  .agendamento-layout {
+    gap: 16px;
+  }
+
+  .form-bloco {
+    padding: 22px 18px;
+    border-radius: 12px;
+  }
+
+  .form-bloco h3 {
+    font-size: 17px;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .bloco-num {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+  }
+
+  /* Cards de serviço: icone menor, layout ajustado */
+  .servico-opcao .servico-icone {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .opcao-card {
+    padding: 12px 14px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+
+  .opcao-info strong {
+    font-size: 14px;
+  }
+
+  .opcao-info span {
+    font-size: 11px;
+  }
+
+  .opcao-info small {
+    font-size: 11px;
+  }
+
+  .opcao-preco {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .opcao-preco.destaque {
+    font-size: 10px;
+  }
+
+  /* Campos de formulário */
+  .campo input,
+  .campo select,
+  .campo textarea {
+    font-size: 13px;
+    padding: 11px 14px;
+    border-radius: 8px;
+  }
+
+  .campo label {
+    font-size: 11px;
+  }
+
+  /* Botão principal */
+  .btn-agendar {
+    font-size: 14px;
+    padding: 15px 24px;
+    border-radius: 10px;
+  }
+
+  /* Aside */
+  .aside-bloco {
+    padding: 20px 18px;
+    border-radius: 12px;
+  }
+
+  .aside-bloco h4 {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .aside-bloco p {
+    font-size: 12px;
+  }
+
+  .horarios-lista li {
+    font-size: 12px;
+  }
+
+  .btn-whatsapp {
+    font-size: 13px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    width: fit-content;
+  }
+
+  .aside-aviso {
+    padding: 14px 14px;
+    border-radius: 10px;
+  }
+
+  .aside-aviso p {
+    font-size: 11px;
+  }
+}
+
+/* ── Mobile pequeno: até 360px ── */
+@media screen and (max-width: 360px) {
+  .agendamento-hero h1 {
+    font-size: 22px;
+  }
+
+  .agendamento-main {
+    padding: 16px 10px 40px;
+  }
+
+  .form-bloco {
+    padding: 18px 14px;
+  }
+
+  /* Em telas muito pequenas, o opcao-card empilha:
+     preço desce para baixo das infos do serviço */
+  .opcao-card {
+    flex-wrap: wrap;
+  }
+
+  .opcao-preco {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 8px;
+    border-top: 1px solid rgba(44, 53, 71, 0.08);
+    font-size: 13px;
+  }
+
+  .btn-agendar {
+    font-size: 13px;
+    padding: 14px 16px;
+  }
+
+  /* Header: esconde texto do voltar, fica só seta */
+  .voltar-link span {
+    display: none;
+  }
+}
