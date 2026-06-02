@@ -110,7 +110,7 @@
 /* ─────────────────────────────────────────
     BLOCOS DO FORMULÁRIO
 ───────────────────────────────────────── */
-.formulario-wrapper {
+.formulario-wrapper form{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -159,7 +159,7 @@
     gap: 10px;
 }
 
-.servico-opcao input[type="radio"] { display: none; }
+.servico-opcao input[type="checkbox"] { display: none; }
 
 .opcao-card {
     display: flex;
@@ -272,16 +272,6 @@
 .campo textarea:focus {
     border-color: var(--color-gold);
     box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.12);
-}
-
-/* ─────────────────────────────────────────
-    DIVISOR entre blocos de campos
-───────────────────────────────────────── */
-.campo-divider {
-    grid-column: 1 / -1;
-    height: 1px;
-    background-color: rgba(44, 53, 71, 0.08);
-    margin: 4px 0;
 }
 
 /* ─────────────────────────────────────────
