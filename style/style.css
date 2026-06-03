@@ -66,6 +66,25 @@ html {
 .navbar nav .navlink a:hover {
     color: #a78a3d;
 }
+.menu-checkbox {
+    display: none;
+}
+
+.menu-hamburguer {
+    display: none;
+    font-size: 28px;
+    color: var(--color-black);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.menu-hamburguer:hover {
+    color: var(--color-gold);
+}
+
+.icone-fechar {
+    display: none;
+}
 
 /* --- BOTÕES (Nav e Hero) --- */
 .btn {
@@ -1299,5 +1318,120 @@ footer .copyright hr {
 
     footer .copyright {
         font-size: 12px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+    
+    .hero {
+        padding: 60px 40px;
+    }
+    
+    .hero h1 {
+        font-size: 46px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: auto;
+        flex-direction: row; 
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        padding: 20px 30px;
+    }
+
+    .menu-hamburguer {
+        display: block; 
+    }
+
+    .navbar nav.nav-menu,
+    .navbar > .btn-primary {
+        display: none; 
+        width: 100%;
+    }
+
+    .menu-checkbox:checked ~ .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .menu-checkbox:checked ~ .menu-hamburguer .icone-abrir {
+        display: none;
+    }
+    
+    .menu-checkbox:checked ~ .menu-hamburguer .icone-fechar {
+        display: inline-block;
+    }
+
+    .hero {
+        padding: 50px 30px;
+        text-align: center; 
+    }
+
+    .hero-content {
+        margin: 0 auto; 
+    }
+
+    .hero-description {
+        margin: 0 auto 30px auto;
+    }
+
+    .hero-buttons {
+        justify-content: center; 
+    }
+
+    .hero-stats {
+        justify-content: center;
+        flex-wrap: wrap; 
+        gap: 30px;
+    }
+
+    .trust-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar nav .navlink {
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px; 
+    }
+
+    .hero-buttons {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%; 
+        box-sizing: border-box;
+    }
+
+    .hero-stats {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .trust-list {
+        flex-direction: column; 
+        gap: 15px;
     }
 }
