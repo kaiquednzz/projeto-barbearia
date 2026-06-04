@@ -53,7 +53,7 @@ Observações: ${observacoes.value || 'Nenhuma observação.'}`
 // ==========================================
 const btnMobile = document.getElementById('btn-mobile');
 
-if (btnMobile) { // ✅ Só roda se o elemento existir
+if (btnMobile) { 
     const navMenu = document.querySelector('.nav-menu');
     const iconeBtn = document.getElementById('icone-btn');
 

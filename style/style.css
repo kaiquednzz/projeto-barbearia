@@ -66,24 +66,19 @@ html {
 .navbar nav .navlink a:hover {
     color: #a78a3d;
 }
-
-
-/* Esconder o botão na versão de desktop e limpar o estilo padrão */
+/* Como o Site foi Feito Primeiro pra desktop, o botão hamburguer segue a regra de nao aparecer nesse tipo de tela */
 .menu-hamburguer {
     display: none;
-    background: transparent; /* ✅ sem red */
+    background: transparent; 
     border: none;
     font-size: 28px;
     color: var(--color-black);
     cursor: pointer;
     transition: color 0.2s ease;
 }
-
-/* Esse aqui de baixo você deixa como já está! */
 .menu-hamburguer:hover {
     color: var(--color-gold);
 }
-
 /* --- BOTÕES (Nav e Hero) --- */
 .btn {
     font-family: 'Poppins', sans-serif;
@@ -199,11 +194,22 @@ html {
 
 .trust-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     color: var(--color-offwhite);
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+}
+
+.trust-list li {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.trust-list li + li {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* ========================================
@@ -1344,7 +1350,7 @@ footer .copyright hr {
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 20px 30px;
-        /* SEM position: relative — não precisa mais */
+        
     }
 
     .menu-hamburguer {
@@ -1367,16 +1373,15 @@ footer .copyright hr {
         display: none;
     }
 
-    /* Menu aberto empurra o conteúdo para baixo, sem flutuar */
+    /* Quando o menu ta ativo ele empurra tudo pra baixo */
     .navbar .nav-menu.ativo {
         display: flex !important;
         flex-direction: column;
         align-items: center;
         gap: 10px;
         padding: 20px 0;
-        width: 100%;         /* ocupa a largura da navbar */
+        width: 100%;         
         background-color: var(--color-offwhite);
-        /* ✅ SEM position: absolute — flui normalmente no documento */
     }
 
     .hero {
