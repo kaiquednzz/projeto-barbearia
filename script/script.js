@@ -48,3 +48,26 @@ Observações: ${observacoes.value || 'Nenhuma observação.'}`
         form.reportValidity()
     }
 }
+// ==========================================
+// SCRIPT DO MENU HAMBÚRGUER
+// ==========================================
+const btnMobile = document.getElementById('btn-mobile');
+
+if (btnMobile) { // ✅ Só roda se o elemento existir
+    const navMenu = document.querySelector('.nav-menu');
+    const iconeBtn = document.getElementById('icone-btn');
+
+    btnMobile.addEventListener('click', () => {
+        navMenu.classList.toggle('ativo');
+
+        if (navMenu.classList.contains('ativo')) {
+            iconeBtn.classList.remove('fa-bars');
+            iconeBtn.classList.add('fa-xmark');
+            btnMobile.setAttribute('aria-expanded', 'true');
+        } else {
+            iconeBtn.classList.remove('fa-xmark');
+            iconeBtn.classList.add('fa-bars');
+            btnMobile.setAttribute('aria-expanded', 'false');
+        }
+    });
+}

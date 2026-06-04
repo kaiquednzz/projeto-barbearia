@@ -66,24 +66,22 @@ html {
 .navbar nav .navlink a:hover {
     color: #a78a3d;
 }
-.menu-checkbox {
-    display: none;
-}
 
+
+/* Esconder o botão na versão de desktop e limpar o estilo padrão */
 .menu-hamburguer {
     display: none;
+    background: transparent; /* ✅ sem red */
+    border: none;
     font-size: 28px;
     color: var(--color-black);
     cursor: pointer;
     transition: color 0.2s ease;
 }
 
+/* Esse aqui de baixo você deixa como já está! */
 .menu-hamburguer:hover {
     color: var(--color-gold);
-}
-
-.icone-fechar {
-    display: none;
 }
 
 /* --- BOTÕES (Nav e Hero) --- */
@@ -1320,6 +1318,10 @@ footer .copyright hr {
         font-size: 12px;
     }
 }
+
+/* Responsividade Anthony, Navbar,Hero e TrustBar*/
+
+/* Notbook e Tablet deitado */
 @media screen and (max-width: 1024px) {
     .navbar {
         padding: 20px 30px;
@@ -1334,48 +1336,56 @@ footer .copyright hr {
     }
 }
 
+/*  Tablet de pe e Mobile */
 @media screen and (max-width: 768px) {
     .navbar {
         height: auto;
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: space-between;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         padding: 20px 30px;
+        /* SEM position: relative — não precisa mais */
     }
 
     .menu-hamburguer {
-        display: block; 
+        display: block !important;
+        background: transparent !important;
+        border: none !important;
+        font-size: 28px !important;
+        color: var(--color-black) !important;
+        cursor: pointer;
+        padding: 10px;
     }
 
-    .navbar nav.nav-menu,
-    .navbar > .btn-primary {
-        display: none; 
+    /* Esconde o menu e o botão de agendar no mobile */
+    .navbar .nav-menu {
+        display: none;
         width: 100%;
     }
 
-    .menu-checkbox:checked ~ .nav-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
-        padding-bottom: 10px;
-    }
-
-    .menu-checkbox:checked ~ .menu-hamburguer .icone-abrir {
+    .navbar .btn-primary {
         display: none;
     }
-    
-    .menu-checkbox:checked ~ .menu-hamburguer .icone-fechar {
-        display: inline-block;
+
+    /* Menu aberto empurra o conteúdo para baixo, sem flutuar */
+    .navbar .nav-menu.ativo {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+        width: 100%;         /* ocupa a largura da navbar */
+        background-color: var(--color-offwhite);
+        /* ✅ SEM position: absolute — flui normalmente no documento */
     }
 
     .hero {
         padding: 50px 30px;
-        text-align: center; 
+        text-align: center;
     }
 
     .hero-content {
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 
     .hero-description {
@@ -1383,12 +1393,12 @@ footer .copyright hr {
     }
 
     .hero-buttons {
-        justify-content: center; 
+        justify-content: center;
     }
 
     .hero-stats {
         justify-content: center;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         gap: 30px;
     }
 
@@ -1399,7 +1409,7 @@ footer .copyright hr {
         text-align: center;
     }
 }
-
+/* Celular ate 480px */
 @media screen and (max-width: 480px) {
     .navbar nav .navlink {
         flex-direction: column; 
