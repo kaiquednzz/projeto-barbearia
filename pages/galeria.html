@@ -4,29 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de Fotos</title>
     <link rel="stylesheet" href="../style/galeria.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <title>Galeria - A Barbearia</title>
 </head>
 
 <body>
-    <!-- Header -->
     <header class="navbar">
         <div class="logo">
-            <a href="../index.html"><img src="../midias/images/logos/logo-com-texto-preto.png" alt="Logo da Barbearia"></a>
+            <a href="../index.html"><img src="../midias/images/logos/logo-com-texto-preto.png"
+                    alt="Logo da Barbearia"></a>
         </div>
-        <nav>
+
+        <button id="btn-mobile" class="menu-hamburguer" aria-label="Abrir Menu" aria-expanded="false">
+            <i class="fa-solid fa-bars" id="icone-btn"></i>
+        </button>
+
+        <nav class="nav-menu">
             <ul class="navlink">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#quem-somos">Sobre</a></li>
-                <li><a href="#footer">Contato</a></li>
+                <li><a href="../index.html#inicio">Início</a></li>
+                <li><a href="../index.html#servicos">Serviços</a></li>
+                <li><a href="../index.html#galeria">Galeria</a></li>
+                <li><a href="../index.html#quem-somos">Sobre</a></li>
+                <li><a href="../index.html#footer">Contato</a></li>
             </ul>
         </nav>
-        <a href="#cta" class="btn btn-primary">Agendar Agora</a>
+        <a href="../pages/agendamento.html" class="btn btn-primary">Agendar Agora</a>
     </header>
 
     <!-- Hero banner -->
@@ -40,28 +44,38 @@
     <main>
         <section id="pag-galeria-container" class="pag-galeria-container">
             <div class="pag-galeria-grid">
-                <img src="../assets/galeria1.jpg" alt="Foto 1">
-                <img src="../assets/galeria2.jpg" alt="Foto 2">
-                <img src="../assets/galeria3.jpg" alt="Foto 3">
-                <img src="../assets/galeria4.jpg" alt="Foto 4">
-                <img src="../assets/galeria5.jpg" alt="Foto 5">
-                <img src="../assets/galeria6.jpg" alt="Foto 6">
+                <img src="../midias/images/corte1.jpeg" alt="Corte 1">
+                <img src="../midias/images/corte2.jpeg" alt="Corte 2">
+                <img src="../midias/images/corte3.jpeg" alt="Corte 3">
+                <img src="../midias/images/corte4.jpeg" alt="Corte 4">
+                <img src="../midias/images/corte5.jpeg" alt="Corte 5">
+                <img src="../midias/images/corte6.jpeg" alt="Corte 6">
             </div>
             <div class="pag-galeria-grid">
-                <img src="../assets/galeria1.jpg" alt="Foto 1">
-                <img src="../assets/galeria2.jpg" alt="Foto 2">
-                <img src="../assets/galeria3.jpg" alt="Foto 3">
-                <img src="../assets/galeria4.jpg" alt="Foto 4">
-                <img src="../assets/galeria5.jpg" alt="Foto 5">
-                <img src="../assets/galeria6.jpg" alt="Foto 6">
+                <img src="../midias/images/corte7.jpeg" alt="Corte 7">
+                <img src="../midias/images/corte8.jpeg" alt="Corte 8">
+                <img src="../midias/images/corte9.jpeg" alt="Corte 9">
+                <img src="../midias/images/corte10.jpeg" alt="Corte 10">
+                <img src="../midias/images/corte11.jpeg" alt="Corte 11">
+                <img src="../midias/images/corte12.jpeg" alt="Corte 12">
             </div>
             <div class="pag-galeria-grid">
-                <img src="../assets/galeria1.jpg" alt="Foto 1">
-                <img src="../assets/galeria2.jpg" alt="Foto 2">
-                <img src="../assets/galeria3.jpg" alt="Foto 3">
-                <img src="../assets/galeria4.jpg" alt="Foto 4">
-                <img src="../assets/galeria5.jpg" alt="Foto 5">
-                <img src="../assets/galeria6.jpg" alt="Foto 6">
+                <img src="../midias/images/corte13.jpeg" alt="Corte 13">
+                <img src="../midias/images/corte14.jpeg" alt="Corte 14">
+                <img src="../midias/images/corte15.jpeg" alt="Corte 15">
+                <img src="../midias/images/corte16.jpeg" alt="Corte 16">
+                <img src="../midias/images/corte17.jpeg" alt="Corte 17">
+                <img src="../midias/images/corte18.jpeg" alt="Corte 18">
+            </div>
+        </section>
+        <section id="cta" class="cta">
+            <div class="textos">
+                <h1>Pronto para transformar seu <br> visual?</h1>
+                <p>Agende online agora e garanta seu horário!</p>
+            </div>
+            <div class="botoes">
+                <a class="agendar-horario" href="./pages/agendamento.html">Agendar Horário</a>
+                <a class="ver-servicos" href="#servicos">Ver Serviços</a>
             </div>
         </section>
     </main>
@@ -69,7 +83,7 @@
         <div class="footer-container">
             <div class="brand">
                 <div class="logo">
-                    <a href="index.html"><img src="../midias/images/logos/logo-com-texto-branco.png"
+                    <a href="../index.html"><img src="../midias/images/logos/logo-com-texto-branco.png"
                             alt="Logo A Barbearia" /></a>
                 </div>
                 <address>
@@ -80,25 +94,25 @@
             </div>
             <nav>
                 <div class="links">
-                    <h4>Serviços</h4>
+                    <h2>Serviços</h2>
                     <ul>
-                        <li><a href="./pages/agendamento.html">Corte</a></li>
-                        <li><a href="./pages/agendamento.html">Barba</a></li>
-                        <li><a href="./pages/agendamento.html">Coloração</a></li>
-                        <li><a href="./pages/agendamento.html">Tratamentos</a></li>
+                        <li><a href="../pages/agendamento.html">Corte</a></li>
+                        <li><a href="../pages/agendamento.html">Barba</a></li>
+                        <li><a href="../pages/agendamento.html">Coloração</a></li>
+                        <li><a href="../pages/agendamento.html">Tratamentos</a></li>
                     </ul>
                 </div>
                 <div class="links">
-                    <h4>Links</h4>
+                    <h2>Links</h2>
                     <ul>
-                        <li><a href="#">Sobre nós</a></li>
-                        <li><a href="#">Galeria</a></li>
-                        <li><a href="#">Depoimentos</a></li>
-                        <li><a href="#">Agendamento</a></li>
+                        <li><a href="../pages/sobre.html">Sobre nós</a></li>
+                        <li><a href="../pages/galeria.html">Galeria</a></li>
+                        <li><a href="../index.html#depoimentos">Depoimentos</a></li>
+                        <li><a href="../pages/agendamento.html">Agendamento</a></li>
                     </ul>
                 </div>
                 <div class="links">
-                    <h4>Horário</h4>
+                    <h2>Horário</h2>
                     <ul>
                         <li>Seg – Sex: 9h–20h</li>
                         <li>Sábado: 9h–18h</li>
@@ -117,6 +131,8 @@
             <p>© 2026 A Barbearia. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="../script/script.js"></script>
 </body>
 
 </html>

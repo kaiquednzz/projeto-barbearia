@@ -644,13 +644,13 @@ SEÇÃO: NOSSOS SERVIÇOS
     position: absolute;
     inset: 0;
 
-    background-color: rgba(13, 20, 32, 0);
+    background-color: rgba(13, 20, 32, 0.45); /* começa escuro */
 
     transition: background-color 0.3s ease;
 }
 
 .galeria-item:hover::after {
-    background-color: rgba(13, 20, 32, 0.45);
+    background-color: rgba(13, 20, 32, 0); /* some no hover */
 }
 
 

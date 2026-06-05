@@ -18,33 +18,6 @@ body{
     
 }
 
-/* ───────────────────────────────────────── 
-   HEADER
-───────────────────────────────────────── */
-
-.logo-link { text-decoration: none; }
-
-.logo-texto {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--color-gold);
-    letter-spacing: 0.5px;
-}
-
-.voltar-link {
-    font-size: 13px;
-    font-weight: 400;
-    color: var(--color-gray);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: color 0.2s ease;
-}
-
-.voltar-link:hover { color: var(--color-offwhite); }
-
 /* ─────────────────────────────────────────
    HERO BANNER (faixa escura sob o header)
 ───────────────────────────────────────── */
@@ -107,4 +80,192 @@ main{
     max-height: 550px;
     object-fit: cover;
     margin-bottom: 20px;
+}
+
+.pag-galeria-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(13, 20, 32, 0.45);
+    transition: background-color 0.3s ease;
+}
+
+.pag-galeria-item:hover::after {
+    background-color: rgba(13, 20, 32, 0);
+}
+
+/*
+
+RESPÓNSIVIDADE
+
+*/
+
+/* ========================================
+   RESPONSIVIDADE — PÁGINA: GALERIA
+   ======================================== */
+
+/* ── Desktop padrão: até 1280px ── */
+@media screen and (max-width: 1280px) {
+  .pag-galeria-container {
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .pag-galeria-grid img {
+    width: 340px;
+  }
+}
+
+/* ── Laptop: até 1024px ── */
+@media screen and (max-width: 1024px) {
+  .galeria-hero {
+    padding: 44px 40px;
+  }
+
+  .galeria-hero h1 {
+    font-size: 38px;
+  }
+
+  .pag-galeria-grid img {
+    width: 280px;
+    max-height: 420px;
+  }
+}
+
+/* ── Tablet landscape: até 900px ──
+   Ponto crítico: 3 colunas de 280px
+   começa a ficar apertado. Colapsa para 2.
+   ──────────────────────────────────────── */
+@media screen and (max-width: 900px) {
+  .galeria-hero {
+    padding: 40px 32px;
+  }
+
+  .galeria-hero h1 {
+    font-size: 34px;
+  }
+
+  /* De 3 colunas flex para grid 2 colunas */
+  .pag-galeria-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding: 24px 24px;
+  }
+
+  /* Cada "coluna" vira um grid interno de 1 coluna */
+  .pag-galeria-grid {
+    flex-direction: column;
+  }
+
+  .pag-galeria-grid img {
+    width: 100%;
+    max-height: 380px;
+  }
+}
+
+/* ── Tablet portrait: até 768px ── */
+@media screen and (max-width: 768px) {
+  .galeria-hero {
+    padding: 36px 24px;
+  }
+
+  .galeria-hero h1 {
+    font-size: 30px;
+  }
+
+  .galeria-hero p {
+    font-size: 14px;
+  }
+
+  .pag-galeria-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .pag-galeria-grid img {
+    max-height: 300px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+}
+
+/* ── Mobile large: até 600px ──
+   2 colunas ainda funciona mas as imagens
+   ficam pequenas. Colapsa para 1 coluna.
+   ──────────────────────────────────────── */
+@media screen and (max-width: 600px) {
+  .galeria-hero {
+    padding: 32px 20px;
+  }
+
+  .galeria-hero .secao-label {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+  }
+
+  .galeria-hero h1 {
+    font-size: 26px;
+  }
+
+  /* 1 coluna: imagens grandes e respira */
+  .pag-galeria-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 16px;
+  }
+
+  .pag-galeria-grid {
+    width: 100%;
+  }
+
+  .pag-galeria-grid img {
+    width: 100%;
+    max-height: 340px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+  }
+}
+
+/* ── Mobile padrão: até 480px ── */
+@media screen and (max-width: 480px) {
+  .galeria-hero {
+    padding: 28px 16px;
+  }
+
+  .galeria-hero h1 {
+    font-size: 24px;
+  }
+
+  .galeria-hero p {
+    font-size: 13px;
+  }
+
+  .pag-galeria-container {
+    padding: 12px;
+  }
+
+  .pag-galeria-grid img {
+    max-height: 280px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+}
+
+/* ── Mobile pequeno: até 360px ── */
+@media screen and (max-width: 360px) {
+  .galeria-hero h1 {
+    font-size: 22px;
+  }
+
+  .pag-galeria-container {
+    padding: 10px;
+  }
+
+  .pag-galeria-grid img {
+    max-height: 240px;
+    margin-bottom: 8px;
+  }
 }

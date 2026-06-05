@@ -134,6 +134,23 @@
     margin-bottom: 16px;
 }
 
+.valor-icone {
+    font-size: 22px;
+    background-color: var(--color-navy);
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.valor-icone i {
+    color: var(--color-navy);
+}
+
+
 .sobre-nos-fotos {
     flex: 1;
     display: flex;
