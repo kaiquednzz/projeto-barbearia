@@ -1,0 +1,526 @@
+/* =============================================
+   sobre.css — APENAS o que é exclusivo desta página.
+   Tudo mais (navbar, botões, footer, CTA, variáveis)
+   vem do style.css, que deve ser carregado ANTES.
+   ============================================= */
+
+/* =============================================
+   PLACEHOLDERS DE FOTO (temporário até ter imagens reais espero que tenha =s) 
+   ============================================= */
+.foto-placeholder-dark {
+    background-color: var(--color-charcoal);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: var(--color-gray);
+    border: 1px solid rgba(138,144,158,0.3);
+}
+
+/* =============================================
+   HERO DA PÁGINA SOBRE
+   ============================================= */
+.sobre-hero {
+    background-color: var(--color-navy);
+    padding: 80px 50px;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.sobre-hero-content {
+    max-width: 500px;
+}
+
+.sobre-hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--color-offwhite);
+    margin-bottom: 20px;
+}
+
+.sobre-hero-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--color-gray);
+    line-height: 1.7;
+    margin-bottom: 36px;
+}
+
+.sobre-hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.sobre-hero-foto .foto-placeholder-dark {
+    width: 340px;
+    height: 320px;
+}
+
+/* =============================================
+   STATS BAR
+   ============================================= */
+.stats-bar {
+    background-color: var(--color-charcoal);
+    padding: 36px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-bar .stat-item {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.stats-bar .stat-item h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-offwhite);
+    margin-bottom: 4px;
+}
+
+.stats-bar .stat-item p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: var(--color-offwhite);
+}
+
+.stat-divider {
+    width: 1px;
+    height: 40px;
+    background-color: rgba(138,144,158,0.35);
+    flex-shrink: 0;
+}
+
+/* =============================================
+   SOBRE NÓS
+   ============================================= */
+.sobre-nos {
+    background-color: var(--color-offwhite);
+    padding: 80px 50px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.sobre-nos-texto {
+    flex: 1;
+    max-width: 420px;
+}
+
+.sobre-nos-texto h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-black);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.sobre-nos-texto p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: var(--color-paragraf);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.sobre-nos-fotos {
+    flex: 1;
+    display: flex;
+    gap: 12px;
+    height: 320px;
+}
+
+.foto-grande {
+    flex: 1.2;
+    height: 100%;
+}
+
+.fotos-coluna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.foto-pequena {
+    flex: 1;
+}
+
+/* =============================================
+   VALORES
+   ============================================= */
+.valores {
+    background-color: var(--color-navy);
+    padding: 80px 50px;
+}
+
+.valores-header {
+    margin-bottom: 40px;
+}
+
+.valores-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--color-offwhite);
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.valor-card {
+    background-color: var(--color-charcoal);
+    border-radius: 12px;
+    padding: 28px 24px;
+    border: 1px solid rgba(138,144,158,0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.valor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+}
+
+.valor-icone {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-gold);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.valor-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-offwhite);
+    margin-bottom: 10px;
+}
+
+.valor-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: var(--color-gray);
+    line-height: 1.6;
+}
+
+/* =============================================
+   EQUIPE
+   ============================================= */
+.equipe {
+    background-color: var(--color-offwhite);
+    padding: 80px 50px;
+    display: flex; /* A MÁGICA: Coloca textos e cards lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Mantém o bloco todo no centro da tela grande */
+    gap: 100px; /* Dá uma distância elegante entre o título e as fotos */
+}
+
+.equipe-header {
+    flex-shrink: 0; /* Evita que o texto seja esmagado pelas fotos */
+    width: 350px; /* Trava a largura do texto */
+    margin-bottom: 0; /* Remove a margem que tinha antes */
+}
+
+.equipe-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 8px;
+}
+
+.equipe-header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: var(--color-paragraf);
+}
+
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 750px; /* Segura o tamanho máximo das fotos */
+    gap: 40px;
+    margin: 0; /* Remove o margin: 0 auto; antigo */
+}
+
+.membro-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(138,144,158,0.2);
+    box-shadow: 0 2px 8px rgba(13,20,32,0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.membro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 28px rgba(13,20,32,0.13);
+}
+
+.membro-foto {
+    width: 100%;
+    height: 380px;
+    border-radius: 0;
+    border: none;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+.membro-info {
+    padding: 16px 18px;
+}
+
+.membro-info h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: 4px;
+}
+
+.membro-cargo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-gold);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.membro-info p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: var(--color-gray);
+}
+
+/* =============================================
+   TIMELINE
+   ============================================= */
+.timeline {
+    background-color: var(--color-black);
+    padding: 80px 50px;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.timeline-texto {
+    flex-shrink: 0;
+    max-width: 260px;
+}
+
+.timeline-texto h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--color-offwhite);
+    line-height: 1.15;
+}
+
+.timeline-linha {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding-top: 30px;
+}
+
+.timeline-linha::before {
+    content: '';
+    position: absolute;
+    top: 48px;
+    left: 28px;
+    right: 28px;
+    height: 2px;
+    background-color: rgba(138,144,158,0.3);
+}
+
+.timeline-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 10px;
+}
+
+.timeline-bolinha {
+    width: 56px;
+    height: 56px;
+    background-color: var(--color-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
+.timeline-conteudo h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-offwhite);
+    margin-bottom: 8px;
+}
+
+.timeline-conteudo p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: var(--color-gray);
+    line-height: 1.6;
+}
+
+/* =============================================
+   CERTIFICAÇÕES
+   ============================================= */
+.certificacoes {
+    background-color: var(--color-offwhite);
+    padding: 80px 50px;
+}
+
+.certificacoes-header {
+    margin-bottom: 40px;
+}
+
+.certificacoes-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+.certificacoes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cert-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    border: 1px solid rgba(138,144,158,0.2);
+    box-shadow: 0 2px 8px rgba(13,20,32,0.06);
+    transition: transform 0.25s ease;
+}
+
+.cert-card:hover { transform: translateY(-4px); }
+
+.cert-icone {
+    width: 36px;
+    height: 36px;
+    background-color: var(--color-gold);
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.cert-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: 6px;
+}
+
+.cert-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: var(--color-gray);
+}
+
+/* =============================================
+   RESPONSIVO — só o que é novo desta página
+   ============================================= */
+@media screen and (max-width: 1024px) {
+    .sobre-hero { padding: 60px 40px; }
+    .sobre-hero-content h1 { font-size: 46px; }
+    .sobre-hero-foto .foto-placeholder-dark { width: 280px; height: 260px; }
+
+    .valores-grid { grid-template-columns: repeat(2, 1fr); }
+    .equipe-grid  { grid-template-columns: repeat(2, 1fr); }
+
+    .timeline { flex-direction: column; gap: 40px; }
+    .timeline-texto { max-width: 100%; }
+    .timeline-linha::before { display: none; }
+
+    .certificacoes-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (max-width: 768px) {
+    .sobre-hero {
+        flex-direction: column;
+        padding: 50px 30px;
+        text-align: center;
+    }
+    .sobre-hero-foto .foto-placeholder-dark { width: 100%; height: 240px; }
+    .sobre-hero-buttons { justify-content: center; }
+
+    .stats-bar { flex-wrap: wrap; gap: 24px; padding: 36px 30px; }
+    .stat-divider { display: none; }
+
+    .sobre-nos { flex-direction: column; padding: 60px 30px; }
+    .sobre-nos-texto { max-width: 100%; }
+    .sobre-nos-fotos { height: 260px; }
+
+    .valores { padding: 60px 30px; }
+    .valores-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    .equipe {
+        flex-direction: column; /* Faz voltar a ficar um embaixo do outro */
+        align-items: flex-start; /* Alinha tudo à esquerda no celular */
+        gap: 40px; /* Distância entre o texto e os cards */
+        padding: 60px 30px;
+    }
+    .equipe-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    .equipe-header {
+        width: 100%;
+    }
+    .equipe-grid {
+        grid-template-columns: 1fr; /* No celular, 1 foto por linha fica muito mais bonito e legível! */
+        max-width: 100%;
+    }
+
+    .timeline { padding: 60px 30px; }
+    .timeline-linha { flex-direction: column; gap: 32px; padding-top: 0; }
+    .timeline-item { flex-direction: row; text-align: left; gap: 16px; align-items: flex-start; }
+    .timeline-bolinha { margin-bottom: 0; flex-shrink: 0; }
+
+    .certificacoes { padding: 60px 30px; }
+    .certificacoes-grid { grid-template-columns: 1fr; }
+}
+
+@media screen and (max-width: 480px) {
+    .sobre-hero-content h1 { font-size: 36px; }
+    .sobre-hero-buttons { flex-direction: column; width: 100%; }
+    .sobre-hero-buttons .btn { width: 100%; text-align: center; box-sizing: border-box; }
+
+    .valores-grid { grid-template-columns: 1fr; }
+    .equipe-grid  { grid-template-columns: 1fr; }
+}

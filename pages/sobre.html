@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/sobre.css">
+    <script src="../script/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+    <title>Sobre — A Barbearia</title>
+</head>
+
+<body>
+
+    <!-- Reaproveitei a Nav bar que eu fiz -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src="../midias/images/logos/logo-com-texto-preto.png" alt="Logo da Barbearia"></a>
+        </div>
+
+        <button id="btn-mobile" class="menu-hamburguer" aria-label="Abrir Menu" aria-expanded="false">
+            <i class="fa-solid fa-bars" id="icone-btn"></i>
+        </button>
+
+        <nav class="nav-menu">
+            <ul class="navlink">
+                <li><a href="../index.html#inicio">Início</a></li>
+                <li><a href="../index.html#servicos">Serviços</a></li>
+                <li><a href="../index.html#galeria">Galeria</a></li>
+                <li><a href="#" class="ativo">Sobre</a></li>
+                <li><a href="../index.html#footer">Contato</a></li>
+            </ul>
+        </nav>
+        <a href="../pages/agendamento.html" class="btn btn-primary">Agendar Agora</a>
+    </header>
+
+    <main>
+
+        <!-- ========== HERO ========== -->
+        <section class="sobre-hero">
+            <div class="sobre-hero-content">
+                <span class="secao-label">NOSSA HISTÓRIA</span>
+                <h1>Paixão que<br>Virou Arte.</h1>
+                <p>Conheça a história por trás do estilo. Mais de 8 anos transformando autoestima com dedicação e cuidado.</p>
+                <div class="sobre-hero-buttons">
+                    <a href="#equipe" class="btn btn-primary">Nossa Equipe</a>
+                    <a href="../index.html#galeria" class="btn btn-outline">Ver Galeria</a>
+                </div>
+            </div>
+            <!-- Cara vou ser sincero eu coloquei uma div aqui pra por uma foto, mas eu nao sei se combinaria qq coisa tu apaga e fé -->
+            <div class="sobre-hero-foto">
+                <div class="foto-placeholder">[ Foto Principal ]</div>
+            </div>
+        </section>
+
+        <!-- ========== STATS BAR ========== -->
+        <section class="stats-bar">
+            <div class="stat-item">
+                <h2>500+</h2>
+                <p>Clientes Felizes</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <h2>8 anos</h2>
+                <p>No Mercado</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <h2>4.9 ★</h2>
+                <p>Avaliação</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <h2>12+</h2>
+                <p>Profissionais</p>
+            </div>
+        </section>
+
+        <!-- ========== SOBRE NÓS ========== -->
+        <section class="sobre-nos">
+            <div class="sobre-nos-texto">
+                <span class="secao-label secao-label-dark">SOBRE NÓS</span>
+                <h2>Tradição e Modernidade<br>no mesmo lugar.</h2>
+                <p>Fundada em 2016, a Barbearia nasceu do sonho de criar um espaço onde estilo e bem-estar se encontram. Com profissionais certificados e técnicas de ponta, cada visita é uma experiência única.</p>
+                <p>Acreditamos que uma boa aparência transforma não só o visual, mas a autoconfiança de cada cliente.</p>
+            </div>
+            <div class="sobre-nos-fotos">
+                <div class="foto-grande foto-placeholder-dark">Foto 01</div>
+                <div class="fotos-coluna">
+                    <div class="foto-pequena foto-placeholder-dark">Foto 02</div>
+                    <div class="foto-pequena foto-placeholder-dark">Foto 03</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== VALORES ========== -->
+        <section class="valores">
+            <div class="valores-header">
+                <span class="secao-label">O QUE NOS MOVE</span>
+                <h2>Nossos Valores</h2>
+            </div>
+            <div class="valores-grid">
+                <div class="valor-card">
+                    <div class="valor-icone"></div>
+                    <h3>Excelência</h3>
+                    <p>Técnicas premium e produtos de alta qualidade em cada atendimento.</p>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-icone"></div>
+                    <h3>Personalização</h3>
+                    <p>Cada cliente é único. Criamos estilos que refletem sua personalidade.</p>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-icone"></div>
+                    <h3>Confiança</h3>
+                    <p>Relações duradouras baseadas em respeito e transparência total.</p>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-icone"></div>
+                    <h3>Inovação</h3>
+                    <p>Sempre atualizados com tendências e técnicas do mercado global.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== EQUIPE ========== -->
+        <section id="equipe" class="equipe">
+            <div class="equipe-header">
+                <span class="secao-label secao-label-dark">CONHEÇA O TIME</span>
+                <h2>Nossa Equipe</h2>
+                <p>Profissionais certificados e apaixonados pelo que fazem.</p>
+            </div>
+            <div class="equipe-grid">
+                <div class="membro-card">
+                    <img class="membro-foto foto-placeholder-dark" src="../midias/images/Barbeiros/Barbeiro 1.webp">
+                    <div class="membro-info">
+                        <h2>Ricardo M.</h2>
+                        <span class="membro-cargo">Fundador &amp; Barbeiro</span>
+                        <p>12 anos de exp.</p>
+                    </div>
+                </div>
+
+                <div class="membro-card">
+                    <img class="membro-foto foto-placeholder-dark" src="../midias/images/Barbeiros/Barbeiro 2.webp">
+                    <div class="membro-info">
+                        <h2>Carlos V.</h2>
+                        <span class="membro-cargo">Barbeiro Expert</span>
+                        <p>5 anos de exp.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== TIMELINE ========== -->
+        <section class="timeline">
+            <div class="timeline-texto">
+                <span class="secao-label">NOSSA TRAJETÓRIA</span>
+                <h2>Como chegamos<br>até aqui.</h2>
+            </div>
+            <div class="timeline-linha">
+                <div class="timeline-item">
+                    <div class="timeline-bolinha">2016</div>
+                    <div class="timeline-conteudo">
+                        <h3>Fundação</h3>
+                        <p>Abertura da primeira unidade com foco em cortes masculinos premium.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-bolinha">2019</div>
+                    <div class="timeline-conteudo">
+                        <h3>Expansão</h3>
+                        <p>Ampliação e adição de coloração, tratamentos e cuidados femininos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-bolinha">2022</div>
+                    <div class="timeline-conteudo">
+                        <h3>Reconhecimento</h3>
+                        <p>Premiados como melhor barbearia da região com 4.9★.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-bolinha">2024</div>
+                    <div class="timeline-conteudo">
+                        <h3>Hoje</h3>
+                        <p>500+ clientes fidelizados e agendamento 100% online.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CERTIFICAÇÕES ========== -->
+        <section class="certificacoes">
+            <div class="certificacoes-header">
+                <span class="secao-label secao-label-dark">QUALIDADE GARANTIDA</span>
+                <h2>Certificações e Parceiros</h2>
+            </div>
+            <div class="certificacoes-grid">
+                <div class="cert-card">
+                    <div class="cert-icone"></div>
+                    <div>
+                        <h3>Barber Academy Brasil — Cert. Profissional</h3>
+                        <p>Emitido 2022 · Válido 2025</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icone"></div>
+                    <div>
+                        <h3>L'Oréal Professionnel Partner</h3>
+                        <p>Parceiro oficial desde 2019</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icone"></div>
+                    <div>
+                        <h3>Sebrae — Grande Negócio</h3>
+                        <p>Certificação de gestão 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CTA ========== -->
+        <section class="cta">
+            <div class="textos">
+                <span class="secao-label">PRONTO PARA TRANSFORMAR SEU VISUAL?</span>
+                <h1>Venha nos<br>visitar.</h1>
+                <p>Agende agora e veja por que somos a escolha de centenas de clientes satisfeitos.</p>
+            </div>
+            <div class="botoes">
+                <a class="agendar-horario" href="../pages/agendamento.html">Agendar Agora</a>
+                <a class="ver-servicos" href="../index.html#servicos">Ver Serviços</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Reaproveitei o Footer da Index -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="brand">
+                <div class="logo">
+                    <a href="../index.html"><img src="../midias/images/logos/logo-com-texto-branco.png" alt="Logo A Barbearia" /></a>
+                </div>
+                <address>
+                    <p>Rua dos Barbeiros, 42 — São Paulo</p>
+                    <p>contato@gmail.com</p>
+                    <p>(11) 9 0000-0000</p>
+                </address>
+            </div>
+            <nav>
+                <div class="links">
+                    <h2>Serviços</h2>
+                    <ul>
+                        <li><a href="../pages/agendamento.html">Corte</a></li>
+                        <li><a href="../pages/agendamento.html">Barba</a></li>
+                        <li><a href="../pages/agendamento.html">Coloração</a></li>
+                        <li><a href="../pages/agendamento.html">Tratamentos</a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <h2>Links</h2>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="../pages/galeria.html">Galeria</a></li>
+                        <li><a href="../index.html#depoimentos">Depoimentos</a></li>
+                        <li><a href="../pages/agendamento.html">Agendamento</a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <h2>Horário</h2>
+                    <ul>
+                        <li>Seg – Sex: 9h–20h</li>
+                        <li>Sábado: 9h–18h</li>
+                        <li>Domingo: Fechado</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <hr />
+            <p>© 2026 A Barbearia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
