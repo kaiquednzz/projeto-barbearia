@@ -4,479 +4,511 @@
    ======================================== */
 
 .pagina-agendamento {
-    background-color: var(--color-offwhite);
-    min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
+   background-color: var(--color-offwhite);
+   min-height: 100vh;
+   font-family: 'Poppins', sans-serif;
 }
 
 /* ─────────────────────────────────────────
     HEADER
 ───────────────────────────────────────── */
 .header-agendamento {
-    background-color: var(--color-black);
-    height: 68px;
-    display: flex;
-    align-items: center;
-    padding: 0 60px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+   background-color: var(--color-black);
+   height: 68px;
+   display: flex;
+   align-items: center;
+   padding: 0 60px;
+   position: sticky;
+   top: 0;
+   z-index: 100;
 }
 
 .header-inner {
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   width: 100%;
+   max-width: 1140px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
-.logo-link { text-decoration: none; }
+.logo-link {
+   text-decoration: none;
+}
 
 .logo-texto {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--color-gold);
-    letter-spacing: 0.5px;
+   font-family: 'Playfair Display', serif;
+   font-size: 22px;
+   font-weight: 700;
+   color: var(--color-gold);
+   letter-spacing: 0.5px;
 }
 
 .voltar-link {
-    font-size: 13px;
-    font-weight: 400;
-    color: var(--color-gray);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: color 0.2s ease;
+   font-size: 13px;
+   font-weight: 400;
+   color: var(--color-gray);
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   transition: color 0.2s ease;
 }
 
-.voltar-link:hover { color: var(--color-offwhite); }
+.voltar-link:hover {
+   color: var(--color-offwhite);
+}
 
 /* ─────────────────────────────────────────
     HERO BANNER (faixa escura sob o header)
 ───────────────────────────────────────── */
 .agendamento-hero {
-    background-color: var(--color-navy);
-    padding: 52px 60px;
-    text-align: center;
+   background-color: var(--color-navy);
+   padding: 52px 60px;
+   text-align: center;
 }
 
 .agendamento-hero .secao-label {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 3px;
-    color: var(--color-gold);
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 12px;
+   font-size: 11px;
+   font-weight: 600;
+   letter-spacing: 3px;
+   color: var(--color-gold);
+   text-transform: uppercase;
+   display: block;
+   margin-bottom: 12px;
 }
 
 .agendamento-hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 46px;
-    font-weight: 700;
-    color: var(--color-offwhite);
-    margin-bottom: 10px;
-    line-height: 1.15;
+   font-family: 'Playfair Display', serif;
+   font-size: 46px;
+   font-weight: 700;
+   color: var(--color-offwhite);
+   margin-bottom: 10px;
+   line-height: 1.15;
 }
 
 .agendamento-hero p {
-    font-size: 15px;
-    color: var(--color-gray);
+   font-size: 15px;
+   color: var(--color-gray);
 }
 
 /* ─────────────────────────────────────────
     MAIN
 ───────────────────────────────────────── */
 .agendamento-main {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 52px 40px 100px;
+   max-width: 1140px;
+   margin: 0 auto;
+   padding: 52px 40px 100px;
 }
 
 /* ─────────────────────────────────────────
     LAYOUT: 2 colunas
 ───────────────────────────────────────── */
 .agendamento-layout {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 28px;
-    align-items: start;
+   display: grid;
+   grid-template-columns: 1fr 300px;
+   gap: 28px;
+   align-items: start;
 }
 
 /* ─────────────────────────────────────────
     BLOCOS DO FORMULÁRIO
 ───────────────────────────────────────── */
-.formulario-wrapper form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.formulario-wrapper form {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
 }
 
 .form-bloco {
-    background-color: #ffffff;
-    border: 1px solid rgba(44, 53, 71, 0.1);
-    border-radius: 16px;
-    padding: 32px 36px;
-    box-shadow: 0 2px 16px rgba(13, 20, 32, 0.06);
+   background-color: #ffffff;
+   border: 1px solid rgba(44, 53, 71, 0.1);
+   border-radius: 16px;
+   padding: 32px 36px;
+   box-shadow: 0 2px 16px rgba(13, 20, 32, 0.06);
 }
 
 .form-bloco h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--color-black);
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
+   font-family: 'Playfair Display', serif;
+   font-size: 20px;
+   font-weight: 600;
+   color: var(--color-black);
+   margin-bottom: 24px;
+   display: flex;
+   align-items: center;
+   gap: 12px;
 }
 
 .bloco-num {
-    width: 30px;
-    height: 30px;
-    background-color: var(--color-navy);
-    color: var(--color-gold);
-    border-radius: 50%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+   width: 30px;
+   height: 30px;
+   background-color: var(--color-navy);
+   color: var(--color-gold);
+   border-radius: 50%;
+   font-family: 'Poppins', sans-serif;
+   font-size: 13px;
+   font-weight: 700;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
 }
 
 /* ─────────────────────────────────────────
     CARDS DE SERVIÇO
 ───────────────────────────────────────── */
 .servicos-opcoes {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
 }
 
-.servico-opcao input[type="checkbox"] { display: none; }
+.servico-opcao input[type="checkbox"] {
+   display: none;
+}
 
 .opcao-card {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    background-color: var(--color-offwhite);
-    border: 2px solid transparent;
-    border-radius: 12px;
-    padding: 16px 20px;
-    cursor: pointer;
-    transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   background-color: var(--color-offwhite);
+   border: 2px solid transparent;
+   border-radius: 12px;
+   padding: 16px 20px;
+   cursor: pointer;
+   transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
 }
 
 .opcao-card:hover {
-    border-color: rgba(201, 168, 76, 0.4);
-    transform: translateX(4px);
+   border-color: rgba(201, 168, 76, 0.4);
+   transform: translateX(4px);
 }
 
-.servico-opcao input:checked + .opcao-card {
-    border-color: var(--color-gold);
-    background-color: rgba(201, 168, 76, 0.06);
+.servico-opcao input:checked+.opcao-card {
+   border-color: var(--color-gold);
+   background-color: rgba(201, 168, 76, 0.06);
 }
 
 .opcao-preco {
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--color-gold);
-    white-space: nowrap;
-    margin-left: 8px;
+   font-size: 15px;
+   font-weight: 700;
+   color: var(--color-gold);
+   white-space: nowrap;
+   margin-left: 8px;
 }
 
-.opcao-preco.destaque { font-size: 12px; }
+.opcao-preco.destaque {
+   font-size: 12px;
+}
 
 /* ─────────────────────────────────────────
     DATA & HORÁRIO
 ───────────────────────────────────────── */
 .data-horario-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 18px;
 }
 
 /* ─────────────────────────────────────────
     CAMPOS
 ───────────────────────────────────────── */
 .campos-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 18px;
 }
 
-.campo-full { grid-column: 1 / -1; }
+.campo-full {
+   grid-column: 1 / -1;
+}
 
 .campo {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+   display: flex;
+   flex-direction: column;
+   gap: 7px;
 }
 
 .campo label {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--color-charcoal);
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
+   font-size: 12px;
+   font-weight: 600;
+   color: var(--color-charcoal);
+   text-transform: uppercase;
+   letter-spacing: 0.8px;
 }
 
-.obrigatorio { color: var(--color-gold); }
+.obrigatorio {
+   color: var(--color-gold);
+}
 
 .campo input,
 .campo select,
 .campo textarea {
-    background-color: var(--color-offwhite);
-    border: 1.5px solid rgba(44, 53, 71, 0.18);
-    border-radius: 10px;
-    color: var(--color-black);
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    padding: 13px 16px;
-    outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    resize: none;
-    appearance: none;
-    -webkit-appearance: none;
+   background-color: var(--color-offwhite);
+   border: 1.5px solid rgba(44, 53, 71, 0.18);
+   border-radius: 10px;
+   color: var(--color-black);
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   padding: 13px 16px;
+   outline: none;
+   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+   resize: none;
+   appearance: none;
+   -webkit-appearance: none;
 }
 
 .campo select {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232C3547' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-    padding-right: 40px;
-    cursor: pointer;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232C3547' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+   background-repeat: no-repeat;
+   background-position: right 16px center;
+   padding-right: 40px;
+   cursor: pointer;
 }
 
 .campo input[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 0.4;
-    cursor: pointer;
+   opacity: 0.4;
+   cursor: pointer;
 }
 
 .campo input::placeholder,
 .campo textarea::placeholder {
-    color: var(--color-gray);
-    font-weight: 300;
+   color: var(--color-gray);
+   font-weight: 300;
 }
 
-.campo select option { background-color: #fff; }
+.campo select option {
+   background-color: #fff;
+}
 
 .campo input:focus,
 .campo select:focus,
 .campo textarea:focus {
-    border-color: var(--color-gold);
-    box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.12);
+   border-color: var(--color-gold);
+   box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.12);
 }
 
 /* ─────────────────────────────────────────
     BOTÃO PRINCIPAL
 ───────────────────────────────────────── */
 .btn-agendar {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--color-offwhite);
-    background-color: var(--color-navy);
-    border: none;
-    padding: 17px 36px;
-    border-radius: 12px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    width: 100%;
-    letter-spacing: 0.3px;
-    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
-    box-shadow: 0 4px 18px rgba(13, 20, 32, 0.18);
+   font-family: 'Poppins', sans-serif;
+   font-size: 15px;
+   font-weight: 600;
+   color: var(--color-offwhite);
+   background-color: var(--color-navy);
+   border: none;
+   padding: 17px 36px;
+   border-radius: 12px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 12px;
+   width: 100%;
+   letter-spacing: 0.3px;
+   transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+   box-shadow: 0 4px 18px rgba(13, 20, 32, 0.18);
 }
 
 .btn-agendar:hover {
-    background-color: var(--color-charcoal);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 28px rgba(13, 20, 32, 0.22);
+   background-color: var(--color-charcoal);
+   transform: translateY(-3px);
+   box-shadow: 0 8px 28px rgba(13, 20, 32, 0.22);
 }
 
 .btn-agendar i {
-    font-size: 13px;
-    transition: transform 0.2s ease;
+   font-size: 13px;
+   transition: transform 0.2s ease;
 }
 
-.btn-agendar:hover i { transform: translateX(4px); }
+.btn-agendar:hover i {
+   transform: translateX(4px);
+}
 
 /* ─────────────────────────────────────────
     ASIDE
 ───────────────────────────────────────── */
 .agendamento-aside {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    position: sticky;
-    top: 88px;
+   display: flex;
+   flex-direction: column;
+   gap: 14px;
+   position: sticky;
+   top: 88px;
 }
 
 .aside-bloco {
-    background-color: #ffffff;
-    border: 1px solid rgba(44, 53, 71, 0.1);
-    border-radius: 16px;
-    padding: 24px;
-    box-shadow: 0 2px 16px rgba(13, 20, 32, 0.05);
+   background-color: #ffffff;
+   border: 1px solid rgba(44, 53, 71, 0.1);
+   border-radius: 16px;
+   padding: 24px;
+   box-shadow: 0 2px 16px rgba(13, 20, 32, 0.05);
 }
 
 /* Bloco de horários: destaque com faixa dourada no topo */
 .aside-bloco.destaque-aside {
-    border-top: 3px solid var(--color-gold);
+   border-top: 3px solid var(--color-gold);
 }
 
 .aside-bloco h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--color-black);
-    margin-bottom: 14px;
-    display: flex;
-    align-items: center;
-    gap: 9px;
+   font-family: 'Playfair Display', serif;
+   font-size: 15px;
+   font-weight: 600;
+   color: var(--color-black);
+   margin-bottom: 14px;
+   display: flex;
+   align-items: center;
+   gap: 9px;
 }
 
 .aside-bloco h4 i {
-    color: var(--color-gold);
-    font-size: 14px;
+   color: var(--color-gold);
+   font-size: 14px;
 }
 
 .aside-bloco p {
-    font-size: 13px;
-    color: var(--color-paragraf);
-    line-height: 1.65;
+   font-size: 13px;
+   color: var(--color-paragraf);
+   line-height: 1.65;
 }
 
 /* Lista de horários */
 .horarios-lista {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
 }
 
 .horarios-lista li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 13px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(44, 53, 71, 0.07);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 13px;
+   padding-bottom: 10px;
+   border-bottom: 1px solid rgba(44, 53, 71, 0.07);
 }
 
 .horarios-lista li:last-child {
-    padding-bottom: 0;
-    border-bottom: none;
+   padding-bottom: 0;
+   border-bottom: none;
 }
 
-.horarios-lista li span { color: var(--color-paragraf); }
+.horarios-lista li span {
+   color: var(--color-paragraf);
+}
 
 .horarios-lista li strong {
-    color: var(--color-black);
-    font-weight: 600;
+   color: var(--color-black);
+   font-weight: 600;
 }
 
-.horarios-lista li.fechado strong { color: #c0392b; }
+.horarios-lista li.fechado strong {
+   color: #c0392b;
+}
 
 /* Botão WhatsApp */
 .btn-whatsapp {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 14px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    color: #fff;
-    background-color: #25D366;
-    text-decoration: none;
-    padding: 12px 18px;
-    border-radius: 10px;
-    width: 200px;
-    justify-content: center;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-    box-shadow: 0 3px 12px rgba(37, 211, 102, 0.25);
+   display: inline-flex;
+   align-items: center;
+   gap: 8px;
+   margin-top: 14px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 13px;
+   font-weight: 600;
+   color: #fff;
+   background-color: #25D366;
+   text-decoration: none;
+   padding: 12px 18px;
+   border-radius: 10px;
+   width: 200px;
+   justify-content: center;
+   transition: background-color 0.2s ease, transform 0.2s ease;
+   box-shadow: 0 3px 12px rgba(37, 211, 102, 0.25);
 }
 
 .btn-whatsapp:hover {
-    background-color: #1ebe5d;
-    transform: translateY(-2px);
+   background-color: #1ebe5d;
+   transform: translateY(-2px);
 }
 
 /* Aviso */
 .aside-aviso {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    background-color: rgba(201, 168, 76, 0.08);
-    border: 1px solid rgba(201, 168, 76, 0.3);
-    border-radius: 12px;
-    padding: 16px 18px;
+   display: flex;
+   gap: 12px;
+   align-items: flex-start;
+   background-color: rgba(201, 168, 76, 0.08);
+   border: 1px solid rgba(201, 168, 76, 0.3);
+   border-radius: 12px;
+   padding: 16px 18px;
 }
 
 .aside-aviso i {
-    color: var(--color-gold);
-    font-size: 15px;
-    margin-top: 1px;
-    flex-shrink: 0;
+   color: var(--color-gold);
+   font-size: 15px;
+   margin-top: 1px;
+   flex-shrink: 0;
 }
 
 .aside-aviso p {
-    font-size: 12px;
-    color: var(--color-paragraf);
-    line-height: 1.65;
+   font-size: 12px;
+   color: var(--color-paragraf);
+   line-height: 1.65;
 }
+
 /* ── Desktop padrão: até 1200px ── */
 @media screen and (max-width: 1200px) {
-  .agendamento-main {
-    padding: 48px 32px 80px;
-  }
+   .agendamento-main {
+      padding: 48px 32px 80px;
+   }
 
-  .agendamento-layout {
-    grid-template-columns: 1fr 280px;
-    gap: 24px;
-  }
+   .agendamento-layout {
+      grid-template-columns: 1fr 280px;
+      gap: 24px;
+   }
 }
 
 /* ── Laptop / Tablet landscape: até 1024px ── */
 @media screen and (max-width: 1024px) {
-  .header-agendamento {
-    padding: 0 40px;
-  }
+   .header-agendamento {
+      padding: 0 40px;
+   }
 
-  .agendamento-hero {
-    padding: 44px 40px;
-  }
+   .agendamento-hero {
+      padding: 44px 40px;
+   }
 
-  .agendamento-hero h1 {
-    font-size: 38px;
-  }
+   .agendamento-hero h1 {
+      font-size: 38px;
+   }
 
-  .agendamento-main {
-    padding: 40px 28px 72px;
-  }
+   .agendamento-main {
+      padding: 40px 28px 72px;
+   }
 
-  .agendamento-layout {
-    grid-template-columns: 1fr 260px;
-    gap: 20px;
-  }
+   .agendamento-layout {
+      grid-template-columns: 1fr 260px;
+      gap: 20px;
+   }
 
-  .btn-whatsapp{
-    width: fit-content;
-  }
+   .btn-whatsapp {
+      width: fit-content;
+   }
 
-  .form-bloco {
-    padding: 28px 28px;
-  }
+   .form-bloco {
+      padding: 28px 28px;
+   }
+}
+
+@media screen and (max-width: 965px) {
+   .agendamento-layout {
+      grid-template-columns: 1fr;
+   }
+
+   .agendamento-aside {
+      position: static;
+      top: auto;
+   }
 }
 
 /* ── Tablet portrait: até 768px ──
@@ -484,295 +516,295 @@
    Remove sticky para não travar o scroll.
    ──────────────────────────────────────── */
 @media screen and (max-width: 768px) {
-  .header-agendamento {
-    height: 60px;
-    padding: 0 28px;
-  }
+   .header-agendamento {
+      height: 60px;
+      padding: 0 28px;
+   }
 
-  .logo-texto {
-    font-size: 20px;
-  }
+   .logo-texto {
+      font-size: 20px;
+   }
 
-  .voltar-link {
-    font-size: 12px;
-  }
+   .voltar-link {
+      font-size: 12px;
+   }
 
-  .agendamento-hero {
-    padding: 40px 28px;
-  }
+   .agendamento-hero {
+      padding: 40px 28px;
+   }
 
-  .agendamento-hero h1 {
-    font-size: 34px;
-  }
+   .agendamento-hero h1 {
+      font-size: 34px;
+   }
 
-  .agendamento-hero p {
-    font-size: 14px;
-  }
+   .agendamento-hero p {
+      font-size: 14px;
+   }
 
-  .agendamento-main {
-    padding: 32px 24px 64px;
-  }
+   .agendamento-main {
+      padding: 32px 24px 64px;
+   }
 
-  /* Colapsa para 1 coluna: aside vai para baixo */
-  .agendamento-layout {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+   /* Colapsa para 1 coluna: aside vai para baixo */
+   .agendamento-layout {
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
 
-  /* Aside: deixa de ser sticky */
-  .agendamento-aside {
-    position: static;
-    top: auto;
+   /* Aside: deixa de ser sticky */
+   .agendamento-aside {
+      position: static;
+      top: auto;
 
-    /* Em tablet, aside vira grid 2x2 para compactar */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-  }
+      /* Em tablet, aside vira grid 2x2 para compactar */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+   }
 
-  /* Aviso ocupa linha inteira no grid do aside */
-  .aside-aviso {
-    grid-column: 1 / -1;
-  }
-  
+   /* Aviso ocupa linha inteira no grid do aside */
+   .aside-aviso {
+      grid-column: 1 / -1;
+   }
 
-  .form-bloco {
-    padding: 28px 24px;
-  }
 
-  .form-bloco h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
+   .form-bloco {
+      padding: 28px 24px;
+   }
 
-  /* Cards de serviço: preço fica à direita sem margin extra */
-  .opcao-card {
-    padding: 14px 16px;
-    gap: 12px;
-  }
+   .form-bloco h3 {
+      font-size: 18px;
+      margin-bottom: 20px;
+   }
 
-  .opcao-preco {
-    font-size: 14px;
-    margin-left: auto;
-  }
+   /* Cards de serviço: preço fica à direita sem margin extra */
+   .opcao-card {
+      padding: 14px 16px;
+      gap: 12px;
+   }
 
-  .opcao-preco.destaque {
-    font-size: 11px;
-  }
+   .opcao-preco {
+      font-size: 14px;
+      margin-left: auto;
+   }
+
+   .opcao-preco.destaque {
+      font-size: 11px;
+   }
 }
 
 /* ── Mobile large: até 600px ── */
 @media screen and (max-width: 600px) {
-  .header-agendamento {
-    padding: 0 20px;
-  }
+   .header-agendamento {
+      padding: 0 20px;
+   }
 
-  .agendamento-hero {
-    padding: 36px 20px;
-  }
+   .agendamento-hero {
+      padding: 36px 20px;
+   }
 
-  .agendamento-hero h1 {
-    font-size: 30px;
-  }
+   .agendamento-hero h1 {
+      font-size: 30px;
+   }
 
-  .agendamento-main {
-    padding: 24px 16px 56px;
-  }
+   .agendamento-main {
+      padding: 24px 16px 56px;
+   }
 
-  /* Aside vira 1 coluna novamente em mobile */
-  .agendamento-aside {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
+   /* Aside vira 1 coluna novamente em mobile */
+   .agendamento-aside {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+   }
 
-  /* Campos de data e horário empilham */
-  .data-horario-row {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
+   /* Campos de data e horário empilham */
+   .data-horario-row {
+      grid-template-columns: 1fr;
+      gap: 14px;
+   }
 
-  /* Campos pessoais: cada um ocupa linha inteira */
-  .campos-grid {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
+   /* Campos pessoais: cada um ocupa linha inteira */
+   .campos-grid {
+      grid-template-columns: 1fr;
+      gap: 14px;
+   }
 
-  /* campo-full já é 1/-1, se grid é 1 col não muda visualmente */
-  .campo-full {
-    grid-column: auto;
-  }
+   /* campo-full já é 1/-1, se grid é 1 col não muda visualmente */
+   .campo-full {
+      grid-column: auto;
+   }
 }
 
 /* ── Mobile padrão: até 480px ── */
 @media screen and (max-width: 480px) {
 
-  .agendamento-hero .secao-label {
-    font-size: 10px;
-    letter-spacing: 2.5px;
-    overflow: hidden;
-  }
+   .agendamento-hero .secao-label {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      overflow: hidden;
+   }
 
-  .agendamento-hero h1 {
-    font-size: 26px;
-  }
+   .agendamento-hero h1 {
+      font-size: 26px;
+   }
 
-  .agendamento-hero p {
-    font-size: 13px;
-  }
+   .agendamento-hero p {
+      font-size: 13px;
+   }
 
-  .agendamento-main {
-    padding: 20px 12px 48px;
-  }
+   .agendamento-main {
+      padding: 20px 12px 48px;
+   }
 
-  .agendamento-layout {
-    gap: 16px;
-  }
+   .agendamento-layout {
+      gap: 16px;
+   }
 
-  .form-bloco {
-    padding: 22px 18px;
-    border-radius: 12px;
-  }
+   .form-bloco {
+      padding: 22px 18px;
+      border-radius: 12px;
+   }
 
-  .form-bloco h3 {
-    font-size: 17px;
-    gap: 10px;
-    margin-bottom: 16px;
-  }
+   .form-bloco h3 {
+      font-size: 17px;
+      gap: 10px;
+      margin-bottom: 16px;
+   }
 
-  .bloco-num {
-    width: 26px;
-    height: 26px;
-    font-size: 12px;
-  }
+   .bloco-num {
+      width: 26px;
+      height: 26px;
+      font-size: 12px;
+   }
 
-  /* Cards de serviço: icone menor, layout ajustado */
-  .servico-opcao .servico-icone {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-    border-radius: 8px;
-    flex-shrink: 0;
-  }
+   /* Cards de serviço: icone menor, layout ajustado */
+   .servico-opcao .servico-icone {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      border-radius: 8px;
+      flex-shrink: 0;
+   }
 
-  .opcao-card {
-    padding: 12px 14px;
-    gap: 10px;
-    border-radius: 10px;
-  }
+   .opcao-card {
+      padding: 12px 14px;
+      gap: 10px;
+      border-radius: 10px;
+   }
 
-  .opcao-info strong {
-    font-size: 14px;
-  }
+   .opcao-info strong {
+      font-size: 14px;
+   }
 
-  .opcao-info span {
-    font-size: 11px;
-  }
+   .opcao-info span {
+      font-size: 11px;
+   }
 
-  .opcao-info small {
-    font-size: 11px;
-  }
+   .opcao-info small {
+      font-size: 11px;
+   }
 
-  .opcao-preco {
-    font-size: 13px;
-    white-space: nowrap;
-  }
+   .opcao-preco {
+      font-size: 13px;
+      white-space: nowrap;
+   }
 
-  .opcao-preco.destaque {
-    font-size: 10px;
-  }
+   .opcao-preco.destaque {
+      font-size: 10px;
+   }
 
-  /* Campos de formulário */
-  .campo input,
-  .campo select,
-  .campo textarea {
-    font-size: 13px;
-    padding: 11px 14px;
-    border-radius: 8px;
-  }
+   /* Campos de formulário */
+   .campo input,
+   .campo select,
+   .campo textarea {
+      font-size: 13px;
+      padding: 11px 14px;
+      border-radius: 8px;
+   }
 
-  .campo label {
-    font-size: 11px;
-  }
+   .campo label {
+      font-size: 11px;
+   }
 
-  /* Botão principal */
-  .btn-agendar {
-    font-size: 14px;
-    padding: 15px 24px;
-    border-radius: 10px;
-  }
+   /* Botão principal */
+   .btn-agendar {
+      font-size: 14px;
+      padding: 15px 24px;
+      border-radius: 10px;
+   }
 
-  /* Aside */
-  .aside-bloco {
-    padding: 20px 18px;
-    border-radius: 12px;
-  }
+   /* Aside */
+   .aside-bloco {
+      padding: 20px 18px;
+      border-radius: 12px;
+   }
 
-  .aside-bloco h4 {
-    font-size: 14px;
-    margin-bottom: 12px;
-  }
+   .aside-bloco h4 {
+      font-size: 14px;
+      margin-bottom: 12px;
+   }
 
-  .aside-bloco p {
-    font-size: 12px;
-  }
+   .aside-bloco p {
+      font-size: 12px;
+   }
 
-  .horarios-lista li {
-    font-size: 12px;
-  }
+   .horarios-lista li {
+      font-size: 12px;
+   }
 
-  .btn-whatsapp {
-    font-size: 13px;
-    padding: 12px 16px;
-    border-radius: 8px;
-    width: fit-content;
-  }
+   .btn-whatsapp {
+      font-size: 13px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      width: fit-content;
+   }
 
-  .aside-aviso {
-    padding: 14px 14px;
-    border-radius: 10px;
-  }
+   .aside-aviso {
+      padding: 14px 14px;
+      border-radius: 10px;
+   }
 
-  .aside-aviso p {
-    font-size: 11px;
-  }
+   .aside-aviso p {
+      font-size: 11px;
+   }
 }
 
 /* ── Mobile pequeno: até 360px ── */
 @media screen and (max-width: 360px) {
-  .agendamento-hero h1 {
-    font-size: 22px;
-  }
+   .agendamento-hero h1 {
+      font-size: 22px;
+   }
 
-  .agendamento-main {
-    padding: 16px 10px 40px;
-  }
+   .agendamento-main {
+      padding: 16px 10px 40px;
+   }
 
-  .form-bloco {
-    padding: 18px 14px;
-  }
+   .form-bloco {
+      padding: 18px 14px;
+   }
 
-  /* Em telas muito pequenas, o opcao-card empilha:
+   /* Em telas muito pequenas, o opcao-card empilha:
      preço desce para baixo das infos do serviço */
-  .opcao-card {
-    flex-wrap: wrap;
-  }
+   .opcao-card {
+      flex-wrap: wrap;
+   }
 
-  .opcao-preco {
-    width: 100%;
-    margin-left: 0;
-    padding-top: 8px;
-    border-top: 1px solid rgba(44, 53, 71, 0.08);
-    font-size: 13px;
-  }
+   .opcao-preco {
+      width: 100%;
+      margin-left: 0;
+      padding-top: 8px;
+      border-top: 1px solid rgba(44, 53, 71, 0.08);
+      font-size: 13px;
+   }
 
-  .btn-agendar {
-    font-size: 13px;
-    padding: 14px 16px;
-  }
+   .btn-agendar {
+      font-size: 13px;
+      padding: 14px 16px;
+   }
 
-  /* Header: esconde texto do voltar, fica só seta */
-  .voltar-link span {
-    display: none;
-  }
+   /* Header: esconde texto do voltar, fica só seta */
+   .voltar-link span {
+      display: none;
+   }
 }
