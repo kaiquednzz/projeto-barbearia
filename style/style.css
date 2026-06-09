@@ -128,7 +128,8 @@ html {
     justify-content: center;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/midias/images/fachada.webp);
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: right right;
 
 }
 
@@ -973,7 +974,7 @@ SEÇÃO: NOSSOS SERVIÇOS
     max-width: 500px;
 }
 
-.quem-somos .textos h1 {
+.quem-somos .textos h2 {
     font-family: 'Roboto Mono', serif;
     font-size: 12px;
     font-weight: 500;
@@ -981,7 +982,7 @@ SEÇÃO: NOSSOS SERVIÇOS
     margin-bottom: 20px;
 }
 
-.quem-somos .textos h2 {
+.quem-somos .textos h3 {
     font-family: 'Playfair Display', serif;
     font-size: 42px;
     font-weight: 700;
@@ -1064,7 +1065,7 @@ SEÇÃO: NOSSOS SERVIÇOS
     height: 400px;
 }
 
-.depoimentos h1 {
+.depoimentos h2 {
     font-family: 'Roboto Mono';
     font-size: 12px;
     font-weight: 500;
@@ -1072,7 +1073,7 @@ SEÇÃO: NOSSOS SERVIÇOS
     margin-bottom: 10px;
 }
 
-.depoimentos h2 {
+.depoimentos h3 {
     font-family: 'Playfair Display', serif;
     font-size: 42px;
     font-weight: 700;
@@ -1130,7 +1131,7 @@ SEÇÃO: NOSSOS SERVIÇOS
     background-color: var(--color-black);
 }
 
-.cta .textos h1 {
+.cta .textos h2 {
     font-family: 'Playfair Display', serif;
     font-size: 42px;
     font-weight: 800;
