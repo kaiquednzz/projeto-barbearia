@@ -1,5 +1,3 @@
-//script para 
-
 // Script para manipulação do formulário de agendamento via whatsapp
 function enviarMensagem() {
     //pega o form
@@ -48,6 +46,8 @@ Observações: ${observacoes.value || 'Nenhuma observação.'}`
         form.reportValidity()
     }
 }
+
+
 // ==========================================
 // SCRIPT DO MENU HAMBÚRGUER
 // ==========================================
