@@ -106,6 +106,7 @@
    ============================================= */
 .sobre-nos {
     background-color: var(--color-offwhite);
+    justify-content: center;
     padding: 80px 50px;
     display: flex;
     align-items: center;
@@ -153,29 +154,23 @@
 
 .sobre-nos-fotos {
     flex: 1;
-    display: flex;
-    gap: 12px;
-    height: 320px;
+    height: 400px;
+    width: 100%;
+    max-width:  600px;
 }
 
 .foto-grande {
-    flex: 1.2;
+    width: 100%;
     height: 100%;
-}
-
-.fotos-coluna {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.foto-pequena {
-    flex: 1;
     object-fit: cover;
-    width: 320px;
-    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+.foto-grande:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 28px rgba(13, 20, 32, 0.13); 
+    }
 
 /* =============================================
    VALORES
