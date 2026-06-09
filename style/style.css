@@ -126,7 +126,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/midias/images/fachada.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../midias/images/fachada.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right right;
